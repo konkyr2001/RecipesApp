@@ -1,0 +1,5 @@
+GET https://api.spoonacular.com/recipes/findByIngredients
+Content-Type: application/json
+apiKey=550412bcba01405f8012be5055a8897a
+
+https://api.spoonacular.com/recipes/716429/information?apiKey=550412bcba01405f8012be5055a8897a&includeNutrition=true.

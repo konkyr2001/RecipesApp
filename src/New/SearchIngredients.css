@@ -1,0 +1,38 @@
+.search-ingredients {
+  font-family: "Montserrat", sans-serif;
+
+  /* font-weight: 550; */
+  /* -webkit-filter: blur(5px); */
+  /* filter: blur(5px); */
+}
+
+.ingredients-filter-container {
+  background-color: rgba(110, 182, 230, 0.3); /* Black w/opacity/see-through */
+  color: white;
+  border: 3px solid #f1f1f1;
+  border-radius: 20px;
+}
+#protein-input::-webkit-outer-spin-button,
+#protein-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+#protein-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0px 20px;
+}
+
+#slider .noUi-tooltip {
+  transform: translate(-50%, 200%);
+  background-color: rgb(127, 175, 214);
+  border-radius: 10px;
+  color: white;
+}

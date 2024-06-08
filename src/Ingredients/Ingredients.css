@@ -1,0 +1,20 @@
+.ingredients {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+.ingredients-list {
+  padding: 40px 5px 0px 5px;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  grid-gap: 0px 10px;
+  justify-items: center; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#slider .noUi-tooltip {
+  /* -webkit-transform: translate(-50%, 25px); */
+  transform: translate(-50%, 200%);
+  /* writing-mode: vertical-lr; */
+}

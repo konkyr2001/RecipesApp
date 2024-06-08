@@ -1,0 +1,60 @@
+/* RandomFood.css */
+.switch {
+  width: 60px;
+  height: 30px;
+  background-color: #e9e8e8;
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+  margin-top: 5px;
+}
+
+.handle {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+  transition: left 0.3s;
+}
+
+.switch[data-ison="false"] .handle {
+  background-color: rgb(71, 70, 70);
+}
+
+.switch[data-ison="true"] {
+  background-color: #1b0329;
+}
+
+.switch[data-ison="true"] .handle {
+  left: 32.5px; /* Move the handle to the right when on */
+}
+
+.light-dark-svg {
+  font-size: 20px;
+  transition: all 0.17s;
+  top: 50%;
+  transform: translateY(-50%);
+
+  /* dont trigger on double click */
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.switch[data-ison="true"] .light-dark-svg:nth-child(1) {
+  opacity: 0;
+}
+.switch[data-ison="true"] .light-dark-svg:nth-child(2) {
+  opacity: 1;
+}
+.switch[data-ison="false"] .light-dark-svg:nth-child(1) {
+  opacity: 1;
+}
+.switch[data-ison="false"] .light-dark-svg:nth-child(2) {
+  opacity: 0;
+}

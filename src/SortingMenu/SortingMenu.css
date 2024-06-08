@@ -1,0 +1,21 @@
+.sorting-menu {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.sorting-link {
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.sorting-link::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: black;
+  transition: 300ms;
+}
+
+.sorting-link:hover::after {
+  width: 100%;
+}

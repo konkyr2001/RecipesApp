@@ -1,0 +1,68 @@
+.recipe-container {
+  /* width: 200px; */
+  /* height: 200px; */
+  border: 2px solid rgb(218, 215, 215);
+  /* background-color: red; */
+  border-radius: 10px;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.item1 {
+  flex: 0 0 50%;
+}
+
+.item2 {
+  flex: 0 0 50%;
+}
+
+.item3 {
+  flex: 1 1 150px;
+}
+
+item4 {
+  flex: 1 1 calc(100%-150px);
+}
+
+.item1,
+.item3 {
+  background-color: red;
+}
+.fa-clock,
+.fa-fire-flame-curved,
+.fa-fire-flame-simple,
+.fa-bowl-food,
+.fa-wheat-awn,
+.fa-dumbbell {
+  font-size: 17px;
+  margin: 10px 7px 10px 30px;
+  /* font-family: "Poppins", sans-serif; */
+}
+
+.fa-dumbbell {
+  margin: 10px 7px 10px 27px;
+}
+
+.fa-wheat-awn {
+  margin: 10px 7px 10px 28px;
+}
+
+.fa-bowl-food {
+  margin: 10px 7px 10px 30px;
+}
+.ingredients-icons-text > label {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.recipe-image {
+  background-color: white;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  display: block;
+  object-fit: cover;
+}

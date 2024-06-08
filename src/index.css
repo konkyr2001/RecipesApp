@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: white;
+}
+
+#root {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  background: rgb(180, 242, 255);
+  background: radial-gradient(
+    circle,
+    rgba(180, 242, 255, 1) 0%,
+    rgba(162, 218, 235, 1) 100%
+  );
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(94, 218, 240);
+  border: 4px solid transparent;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+
+body::-webkit-scrollbar {
+  width: 18px;
+}
+
+i {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}

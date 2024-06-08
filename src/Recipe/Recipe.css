@@ -1,0 +1,28 @@
+.recipe-container {
+  /* width: 200px; */
+  /* height: 200px; */
+  border: 2px solid black;
+  /* background-color: red; */
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.fa-clock,
+.fa-fire-flame-curved,
+.fa-fire-flame-simple,
+.fa-bowl-food,
+.fa-wheat-awn,
+.fa-dumbbell {
+  font-size: 15px;
+  margin: 10px;
+}
+
+.recipe-image {
+  background-color: white;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+}

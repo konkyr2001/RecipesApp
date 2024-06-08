@@ -1,0 +1,32 @@
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+}
+
+.ingredients-list > li {
+  margin: 10px 5px;
+  height: fit-content;
+  display: inline-block;
+}
+
+.ingredients-list > li > button {
+  background-color: rgb(134, 240, 205);
+  transition: background-color ease 0.3s;
+  padding: 3px 10px;
+  border-radius: 15px;
+}
+
+.ingredients-list > li > button:hover {
+  background-color: rgb(123, 216, 185);
+}
+.ingredients-list > li > .selected {
+  background-color: rgb(24, 192, 33);
+  /* background-color: rgb(240, 29, 29); */
+  width: 100%;
+}
+.ingredients-list > li > .selected:hover {
+  background-color: rgb(240, 29, 29);
+  /* background-color: rgb(192, 24, 24); */
+  width: 100%;
+}
