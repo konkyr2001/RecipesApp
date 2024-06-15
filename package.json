@@ -12,6 +12,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.19",
     "framer-motion": "^11.2.3",
+    "hamburger-react": "^2.5.1",
     "like-effects": "^1.0.8",
     "locomotive-scroll": "^4.1.4",
     "nouislider": "^15.7.1",

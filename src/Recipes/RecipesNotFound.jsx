@@ -28,12 +28,13 @@ export default function RecipesNotFound({ setNotFound }) {
         <button className="close" onClick={handleButton}>
           ✖
         </button>
-        <img src={ErrorImg} alt="cookies-img" />
+        <img src={ErrorImg} alt="cookies-img" className="w-[50px] h-auto shadow-black shadow-md rounded-[50%]"/>
+        <h1 className="text-[35px] font-bold">Error</h1>
         <p>
-          We use cookies for improving user experience, analytics and marketing.
+          We couldn't find recipes with your ingredients.
         </p>
         <button className="accept" onClick={handleButton}>
-          That's fine!
+          OK
         </button>
       </div>
     </dialog>,

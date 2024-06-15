@@ -1,6 +1,7 @@
 import "./SearchIngredients.css";
 import Ingredients from "../Ingredients/Ingredients";
 
+console.log("mpike searchIOngreditsns")
 export default function SearchIngredients() {
   return (
     <section
