@@ -1,5 +1,3 @@
-import { polyfill } from "seamless-scroll-polyfill";
-
 export default function Link({
   section,
   handleButton,

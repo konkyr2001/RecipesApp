@@ -22,7 +22,7 @@ export default function NavigationBurger() {
         style={{ transition: "width 300ms ease-in-out, opacity 400ms ease-in-out, visibility 400ms ease-in-out" }}
       >
         <div className="mt-[100px] text-center">
-          <p className="font-appleLookALike text-[20px] font-medium">You can find me here: </p>
+          <p className="font-Quicksand text-[20px] font-medium">You can find me here: </p>
           <ul className="mt-10 flex justify-center">
             <li className="mx-3">
               <a href="https://www.linkedin.com/in/konstantinos-kyriazopoulos-4a44b8233/" target="_blank">

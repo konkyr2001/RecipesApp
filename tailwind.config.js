@@ -7,13 +7,13 @@ export default {
         'width': 'width',
       },
       fontFamily: {
-        'appleLookALike': ["Quicksand", 'sans-serif'],
-      }
-      // font-family: "Quicksand", sans-serif;
-      /* font-family: "Rubik", sans-serif; */
-      /* font-family: "Poppins", sans-serif; */
-      /* font-family: "Nunito Sans", sans-serif; */
-      /* font-family: "Noto Sans", sans-serif; */
+        'Quicksand': ["Quicksand", "sans-serif"],
+        'Rubik': ["Rubik", "sans-serif"],
+        "Poppins": ["Poppins", "sans-serif"],
+        "NunitoSans": ["Nunito Sans", "sans-serif"],
+        "NotoSans": ["Noto Sans", "sans-serif"],
+        "Recursive": ["Recursive", "sans-serif"],
+      },
     },
   },
   plugins: [],

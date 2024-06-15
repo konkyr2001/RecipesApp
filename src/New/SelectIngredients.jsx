@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Select from "react-select";
-// import CreatableSelect from "react-select/creatable";
 import ingredients from "./ingredientsArray";
-import "./SelectIngredients.css";
 
 const customStyles = {
   control: (base, state) => ({
@@ -100,7 +98,7 @@ export default function SelectIngredients({
       noOptionsMessage={({ inputValue }) =>
         inputValue ? "Press enter to add this ingredient" : "No options"
       }
-      className="select-ingredients"
+      className="select-ingredients font-Quicksand"
       styles={customStyles}
       closeMenuOnSelect={false}
       inputValue={selectCurrentInput}

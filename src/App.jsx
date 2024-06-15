@@ -1,5 +1,4 @@
 import "./App.css";
-// import SearchIngredients2 from "./SearchIngredients/SearchIngredients";
 import SearchIngredients from "./New/SearchIngredients";
 import Recipes from "./Recipes/Recipes";
 import Widgets from "./Widgets";
@@ -21,11 +20,9 @@ function App() {
     <>
       <div
         id="main-content"
-        // className="flex w-[90%] h-[90%] bg-slate-100 rounded-[10px] relative"
         className="flex w-full bg-slate-200 rounded-[20px] relative flex-col justify-center align-center mx-auto"
       >
         <SearchIngredients />
-        {/* <SearchIngredients2 /> */}
         <Recipes />
         <Widgets />
       </div>

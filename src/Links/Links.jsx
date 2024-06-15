@@ -35,14 +35,6 @@ export default function Links() {
     };
   }, []);
 
-  function handleButton(buttonValue) {
-    if (buttonValue === "0") {
-      if (visibleButton === "1") setVisibleButton("0");
-    } else {
-      if (visibleButton === "0") setVisibleButton("1");
-    }
-  }
-
   return (
     <span className="fixed right-2 top-1/2 translate-y-[-1/2] z-20 mr-3">
       <ul className="flex justify-center items-center flex-col">

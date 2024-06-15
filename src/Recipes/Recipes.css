@@ -13,11 +13,6 @@
   margin: 20px;
 } */
 .recipes-list {
-  width: 100%;
-  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(510px, 1fr));
-  grid-gap: 0px 20px;
-  justify-items: center;
   /* font-family: "Poppins", sans-serif; */
-  font-family: "Recursive", sans-serif;
 }

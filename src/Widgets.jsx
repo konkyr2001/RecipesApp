@@ -3,6 +3,7 @@ import RandomFood from "./RandomFood/RandomFood";
 import LightDarkMode from "./LightDarkMode";
 import Favorites from "./Favorites";
 import NavigationBurger from "./NavigationBurger";
+
 export default function Widgets() {
   return (
     <div className="absolute top-8 w-full">

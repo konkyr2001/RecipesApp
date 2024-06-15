@@ -1,35 +1,3 @@
-// const foods = [
-//   {
-//     iconClass: "fa-egg",
-//     title: "egg",
-//     information: "full in vitamins",
-//   },
-//   {
-//     iconClass: "fa-drumstick-bite",
-//     title: "chicken",
-//     information:
-//       "Good food for athletes, since it's high in protein and low  in fats",
-//   },
-//   {
-//     iconClass: "fa-bowl-rice",
-//     title: "rice",
-//     information:
-//       "Rice is a low calories food which is also full of carbohydrates and it provides energy",
-//   },
-//   {
-//     iconClass: "fa-apple-whole",
-//     title: "apple",
-//     information:
-//       "Rich in fiber and antioxidants, apples are a healthy snack that can aid in digestion and promote heart health. As they say, one apple a day keeps the doctor away!",
-//   },
-//   {
-//     iconClass: "fa-carrot",
-//     title: "carrot",
-//     information:
-//       " Loaded with beta-carotene and fiber, carrots are crunchy and nutritious vegetables that promote eye health.",
-//   },
-// ];
-
 const foods = [
   {
     iconClass: "fa-bread-slice",

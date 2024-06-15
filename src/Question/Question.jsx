@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-import "./Question.css";
 import { motion } from "framer-motion";
 import QuestionModal from "./QuestionModal";
 
@@ -22,7 +21,7 @@ export default function Question() {
       whileHover={{ scale: 1.2 }}
       className={`opacity-100`}
     >
-      <i className="fa-solid fa-question text-[25px]"></i>
+      <i style={{ color: "#a2d2ff" }} className="fa-solid fa-question text-[25px]"></i>
       <QuestionModal ref={modalRef} />
     </motion.button>
   );

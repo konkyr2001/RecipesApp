@@ -1,11 +1,9 @@
 import "./Recipes.css";
-// import Recipe from "../Recipe/Recipe";
 import Recipe from "./Recipe";
 import { useState, useRef, useEffect } from "react";
 import { useSelector } from "react-redux";
 import SortingMenu from "../SortingMenu/SortingMenu";
 import Loading from "./Loading";
-import NoRecipes from "./NoRecipes";
 import RecipesNotFound from "./RecipesNotFound";
 import RefreshRecipes from "./RefreshRecipes";
 import Links from "../Links/Links";
@@ -151,7 +149,7 @@ export default function Recipes() {
             <RefreshRecipes handleRefresh={handleRefresh} />
             <SortingMenu setSortValue={setSortValue} setSortBy={setSortBy} />
           </div>
-          <ul className="recipes-list">
+          <ul className="recipes-list w-full grid gap-x-0 gap-y-5 justify-items-center font-Recursive">
             {data.hits
               .sort((a, b) => sortRecipeBy(a, b, sortValue, sortBy))
               .map((data, index) => {

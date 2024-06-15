@@ -1,7 +1,5 @@
 import "./SearchIngredients.css";
 import img from "../img/cooking.jpg";
-import ingredientsArray from "./ingredientsArray";
-import IngredientButton from "../IngredientButton/IngredientButton";
 import SelectIngredients from "./SelectIngredients";
 
 import * as noUiSlider from "nouislider";
