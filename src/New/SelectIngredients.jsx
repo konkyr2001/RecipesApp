@@ -25,11 +25,11 @@ const customStyles = {
   option: (styles) => {
     return {
       ...styles,
-      backgroundColor: "blue",
+      backgroundColor: "white",
       // cursor: "pointer",
       color: "black",
       ":hover": {
-        backgroundColor: "white",
+        backgroundColor: "gray",
         color: "black",
       },
       ":active": {
@@ -55,7 +55,7 @@ const customStyles = {
     ...styles,
     color: "white",
     ":hover": {
-      backgroundColor: "purple",
+      backgroundColor: "red",
       color: "black",
     },
   }),

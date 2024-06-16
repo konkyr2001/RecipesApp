@@ -135,9 +135,9 @@ export default function SearchIngredients() {
   }
 
   return (
-    <>
+    <div className="relative">
       <div
-        className="absolute w-full h-[100vh] bg-cover bg-bottom top-0 left-0"
+        className="absolute w-full h-[100vh] bg-cover bg-bottom top-0 left-0 block"
         style={{
           backgroundImage: `url(${img})`,
           backgroundAttachment: "fixed",
@@ -237,6 +237,6 @@ export default function SearchIngredients() {
           </form>
         </div>
       </div>
-    </>
+    </div>
   );
 }

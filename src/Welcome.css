@@ -1,0 +1,17 @@
+.welcome-section-background {
+  /* margin: -400px auto 0; */
+  right: 0px;
+  transform: translateX(50%);
+  min-width: 70%;
+  height: 85%;
+  background: linear-gradient(to right, #7676c2 20%, #2abcda 85%);
+}
+.mix-title {
+  /* color: linear-gradient(90, #020024 0%, #090979 28%, #0d9cb9 100%); */
+  background: linear-gradient(to right, #4444c7 20%, #1bc8eb 70%);
+  font-weight: 600;
+  /* background: linear-gradient(to right, #f32170,
+  #ff6b08, #cf23cf, #eedd44); */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}

@@ -13,6 +13,7 @@ export default {
         "NunitoSans": ["Nunito Sans", "sans-serif"],
         "NotoSans": ["Noto Sans", "sans-serif"],
         "Recursive": ["Recursive", "sans-serif"],
+        "Montserrat": ["Montserrat", "sans-serif"],
       },
     },
   },
