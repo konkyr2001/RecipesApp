@@ -7,27 +7,31 @@ export default function Links() {
   useEffect(() => {
     const handleScroll = () => {
       // window width and height
-      const top = document.documentElement.scrollTop;
-      const bottom = top + document.documentElement.clientHeight;
+      const top = Math.round(document.documentElement.scrollTop);
 
-      // div width and height
-      const ingredientsTop = searchIngredientsSection.offsetTop;
-      const ingredientsBottom =
-        ingredientsTop + searchIngredientsSection.offsetHeight;
+      // // div width and height
+      const welcomeTop = welcomeSection.offsetTop;
+      const websiteDetailsTop = websiteDetailsSection.offsetTop;
+      const ingredientsTop = ingredientsSection.offsetTop;
+      const recipesTop = recipesSection.offsetTop;
 
-      const averageScreenHeight = Math.round((top + bottom) / 2);
-
-      // check if average window height is bigger than div height and swap
-      if (averageScreenHeight > ingredientsBottom) {
+      if (recipesTop <= top) {
+        setVisibleButton("3");
+      } else if (ingredientsTop <= top) {
+        setVisibleButton("2");
+      } else if (websiteDetailsTop <= top) {
         setVisibleButton("1");
-      } else {
+      } else if (welcomeTop <= top) {
         setVisibleButton("0");
       }
     };
 
-    const searchIngredientsSection = document.getElementById(
-      "ingredients-section"
+    const welcomeSection = document.getElementById("welcome-section");
+    const websiteDetailsSection = document.getElementById(
+      "website-details-section"
     );
+    const ingredientsSection = document.getElementById("ingredients-section");
+    const recipesSection = document.getElementById("recipes-section");
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -40,18 +44,30 @@ export default function Links() {
       <ul className="flex justify-center items-center flex-col">
         <li className="mb-1">
           <Link
-            section="ingredients-section"
-            // handleButton={() => handleButton("0")}
+            section="welcome-section"
             visibleButton={visibleButton}
             buttonValue="0"
           />
         </li>
         <li className="mt-1">
           <Link
-            section="recipes-section"
-            // handleButton={() => handleButton("1")}
+            section="website-details-section"
             visibleButton={visibleButton}
             buttonValue="1"
+          />
+        </li>
+        <li className="mt-1">
+          <Link
+            section="ingredients-section"
+            visibleButton={visibleButton}
+            buttonValue="2"
+          />
+        </li>
+        <li className="mt-1">
+          <Link
+            section="recipes-section"
+            visibleButton={visibleButton}
+            buttonValue="3"
           />
         </li>
       </ul>

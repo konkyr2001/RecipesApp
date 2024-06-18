@@ -17,15 +17,24 @@ export default function NavigationBurger() {
         ></Hamburger>
       </div>
       <div
-        className={`bg-slate-500 h-[100vh] fixed top-0 left-0 z-30 pt-3 transition-all
-          ${openNavBar ? 'w-[30vw] opacity-100' : 'w-[0vw] opacity-0'}`}
-        style={{ transition: "width 300ms ease-in-out, opacity 400ms ease-in-out, visibility 400ms ease-in-out" }}
+        className={`h-[100vh] fixed top-0 left-0 z-30 pt-3 transition-all
+          ${openNavBar ? "w-[30vw] opacity-100" : "w-[0vw] opacity-0"}`}
+        style={{
+          transition:
+            "width 300ms ease-in-out, opacity 400ms ease-in-out, visibility 400ms ease-in-out",
+          backgroundColor: "#A3C0ED",
+        }}
       >
         <div className="mt-[100px] text-center">
-          <p className="font-Quicksand text-[20px] font-medium">You can find me here: </p>
+          <p className="font-Quicksand text-[20px] font-medium">
+            You can find me here:{" "}
+          </p>
           <ul className="mt-10 flex justify-center">
             <li className="mx-3">
-              <a href="https://www.linkedin.com/in/konstantinos-kyriazopoulos-4a44b8233/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/konstantinos-kyriazopoulos-4a44b8233/"
+                target="_blank"
+              >
                 <i className="fa-brands fa-linkedin text-[35px] text-blue-600 "></i>
               </a>
             </li>

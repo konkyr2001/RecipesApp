@@ -132,12 +132,15 @@ export default function Recipes() {
       id="recipes-section"
     >
       {notFound && (
-        <RecipesNotFound ref={errorModalRef} setNotFound={setNotFound} />
+        <>
+          <RecipesNotFound setNotFound={setNotFound} />
+          <h1 className="bg-red-500 h-[500px]">THIS IS NOT FOUND </h1>
+        </>
       )}
       {isLoading && <Loading />}
       {error && (
         <>
-          <RecipesNotFound ref={errorModalRef} setNotFound={setNotFound} />
+          <RecipesNotFound setNotFound={setNotFound} />
           <h1 className="bg-red-500 h-[500px]">THIS IS AN ERROR </h1>
         </>
       )}

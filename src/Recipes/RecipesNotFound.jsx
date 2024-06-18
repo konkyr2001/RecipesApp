@@ -23,16 +23,18 @@ export default function RecipesNotFound({ setNotFound }) {
   }
 
   return createPortal(
-    <dialog className="error-container" ref={dialogRef}>
+    <dialog className="error-container z-30" ref={dialogRef}>
       <div className="cookiesContent bg-red-500" id="cookiesPopup">
         <button className="close" onClick={handleButton}>
           ✖
         </button>
-        <img src={ErrorImg} alt="cookies-img" className="w-[50px] h-auto shadow-black shadow-md rounded-[50%]"/>
+        <img
+          src={ErrorImg}
+          alt="cookies-img"
+          className="w-[50px] h-auto shadow-black shadow-md rounded-[50%]"
+        />
         <h1 className="text-[35px] font-bold">Error</h1>
-        <p>
-          We couldn't find recipes with your ingredients.
-        </p>
+        <p>We couldn't find recipes with your ingredients.</p>
         <button className="accept" onClick={handleButton}>
           OK
         </button>

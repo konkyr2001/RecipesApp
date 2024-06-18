@@ -3,6 +3,7 @@ import SearchIngredients from "./New/SearchIngredients";
 import Recipes from "./Recipes/Recipes";
 import Widgets from "./Widgets";
 import Welcome from "./Welcome";
+import WebsiteDetails from "./WebsiteDetails";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 function App() {
@@ -24,6 +25,7 @@ function App() {
         className="flex w-full bg-slate-200 relative flex-col justify-center align-center mx-auto"
       >
         <Welcome />
+        <WebsiteDetails />
         <SearchIngredients />
         <Recipes />
         <Widgets />
