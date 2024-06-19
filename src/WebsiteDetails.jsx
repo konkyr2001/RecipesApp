@@ -1,4 +1,8 @@
 import DetailsContainer from "./DetailsContainer";
+import nutritionImg from "./img/schedule.png";
+import foodImg from "./img/cutlery.png";
+import recipesImg from "./img/saute.png"
+import likeImg from "./img/heart.png";
 
 export default function WebsiteDetails() {
   return (
@@ -9,38 +13,35 @@ export default function WebsiteDetails() {
       <ul className="w-full flex justify-center items-center gap-5">
         <li className="w-1/5 h-[400px]">
           <DetailsContainer
-            iconClass={"fa-solid fa-fire-flame-simple text-red-400"}
-            title={"Calories"}
-            description={"Set the desired calories for your meals"}
+            image={nutritionImg}
+            title={"Macros"}
+            description={"Customize your meal’s nutrients for a balanced and delicious dish!"}
             from={0}
-            to={1000}
+            // to={1000}
           />
         </li>
         <li className="w-1/5 h-[400px]">
           <DetailsContainer
-            iconClass={"fa-solid fa-bolt text-yellow-400"}
-            title={"Protein"}
-            description={"Set the desired calories for your meals"}
+            image={foodImg}
+            title={"Ingredients"}
+            description={"Choose your favorite ingredients and find the recipe that suits you the best!"}
             from={0}
-            to={1000}
           />
         </li>
         <li className="w-1/5 h-[400px]">
           <DetailsContainer
-            iconClass={"fa-solid fa-fire-flame-simple"}
-            title={"Calories"}
-            description={"Set the desired calories for your meals"}
+            image={recipesImg}
+            title={"Recipes"}
+            description={"Find bunch of recipes according to your cravings and become the best chef of the house!"}
             from={0}
-            to={1000}
           />
         </li>
         <li className="w-1/5 h-[400px]">
           <DetailsContainer
-            iconClass={"fa-solid fa-fire-flame-simple"}
-            title={"Calories"}
-            description={"Set the desired calories for your meals"}
+            image={likeImg}
+            title={"Save"}
+            description={"Save your favorite recipes so you can come back anytime and re-create them!"}
             from={0}
-            to={1000}
           />
         </li>
       </ul>

@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 export default function DetailsContainer({
-  iconClass,
+  image,
   title,
   description,
   from,
@@ -12,13 +12,10 @@ export default function DetailsContainer({
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
 
-  console.log(iconClass);
-  console.log(title);
-  console.log(description);
   return (
-    <div className="w-full h-full shadow-md bg-white rounded-xl">
+    <div className="w-full h-full shadow-md rounded-xl bg-blue-300">
       <motion.div
-        className="calories-example-text"
+        className="calories-example-text h-full"
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         ref={ref}
@@ -29,15 +26,13 @@ export default function DetailsContainer({
         }}
       >
         {inView && (
-          <div>
-            <Detail
-              iconClass={iconClass}
-              title={title}
-              description={description}
-              from={from}
-              to={to}
-            />
-          </div>
+          <Detail
+            image={image}
+            title={title}
+            description={description}
+            from={from}
+            to={to}
+          />
         )}
       </motion.div>
     </div>
