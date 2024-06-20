@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
+import "./Favorites.css";
+
 export default function Favorites() {
   const favorites = useSelector((state) => state.favoriteStore.favoriteRecipes);
   const dispatch = useDispatch();
@@ -72,15 +74,16 @@ export default function Favorites() {
           closed: { scale: 0, opacity: 0 },
         }}
         animate={showFavorites ? "open" : "closed"}
-        className="favorites-box absolute bg-slate-200 rounded-[20px] min-w-[200px] w-auto max-w-[400px] min-h-[120px] h-auto mt-10 z-20 px-3 -right-20 overflow-y-auto max-h-[470px]"
+        className="absolute bg-slate-400 rounded-[20px] min-w-[200px] w-auto max-w-[400px] mt-10 z-20 px-1 -right-20  max-h-[470px]"
         ref={modalRef}
       >
+        <div className="triangle bg-transparent border-b-slate-400 absolute right-[78px] -top-8 border-[17px]"></div>
         {favorites.length === 0 ? (
           <p className="text-center w-2/3 mx-auto my-6 text-sm">
             No favourite recipes found yet
           </p>
         ) : (
-          <ul className="w-full flex flex-col mb-1">
+          <ul className="favorites-box px-2 w-full flex flex-col mb-1 overflow-y-auto max-h-[470px]">
             {favorites.map((favorite, index) => (
               <li
                 key={index}

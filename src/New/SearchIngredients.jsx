@@ -1,6 +1,8 @@
 import "./SearchIngredients.css";
 import img from "../img/cooking.jpg";
 import SelectIngredients from "./SelectIngredients";
+import QuestionModal from "./QuestionModal";
+import QuestionButton from "./QuestionButton";
 
 import * as noUiSlider from "nouislider";
 import "nouislider/dist/nouislider.css";
@@ -138,9 +140,10 @@ export default function SearchIngredients() {
           >
             Set Calories
             <i
-              className="fa-solid fa-fire-flame-simple text-red-500"
+              className="fa-solid fa-fire-flame-simple text-red-500 inline-block"
               title="Calories per 100gr"
             ></i>
+            <QuestionButton text="Adjust the calories per serving of your recipes to be around the calories you will give as min and max value." />
           </label>
           <div
             id="slider"
@@ -159,6 +162,7 @@ export default function SearchIngredients() {
               className="fa-solid fa-dumbbell text-green-600"
               title="Protein per 100gr"
             ></i>
+            <QuestionButton text="Adjust the minimum amount of protein per serving that your recipes will contain." />
           </label>
           <input
             type="number"
@@ -173,20 +177,13 @@ export default function SearchIngredients() {
           />
         </div>
         <div className="ingredients-container absolute top-2/4  w-full h-1/4 flex justify-center items-center flex-col gap-5">
-          <SelectIngredients
-            selectedIngredients={ingredients}
-            setSelectedIngredients={setIngredients}
-          />
-          {/* <ul className="ingredients-list w-full">
-            {ingredientsArray.map((ingredient, index) => (
-              <IngredientButton
-                key={index}
-                text={ingredient}
-                onClick={handleButton}
-                style={{ color: "white", textShadow: "black 0px 0px 3px" }}
-              />
-            ))}
-          </ul> */}
+          <span className="flex justify-center items-center">
+            <SelectIngredients
+              selectedIngredients={ingredients}
+              setSelectedIngredients={setIngredients}
+            />
+            <QuestionButton text="Add the ingredients that your recipes will include" />
+          </span>
           <span className="inline-block h-[50px]">
             <input
               type="checkbox"
@@ -201,6 +198,7 @@ export default function SearchIngredients() {
             >
               I have only this ingredients
             </label>
+            <QuestionButton text="Check the checkbox if you only want recipes with the ingredients you just added." />
           </span>
         </div>
         <form

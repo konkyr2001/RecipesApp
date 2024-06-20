@@ -1,5 +1,5 @@
 import { legacy_createStore } from "redux";
-console.log("localStorage: ", localStorage.getItem("favorites"));
+
 const initialState = {
   favoriteRecipes: localStorage.getItem("favorites")
     ? JSON.parse(localStorage.getItem("favorites"))
