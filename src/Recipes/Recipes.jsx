@@ -1,5 +1,6 @@
 import "./Recipes.css";
-import Recipe from "./Recipe";
+// import Recipe from "./Recipe";
+import Recipe2 from "./Recipe2";
 import { useState, useRef, useEffect } from "react";
 import { useSelector } from "react-redux";
 import SortingMenu from "../SortingMenu/SortingMenu";
@@ -167,10 +168,10 @@ export default function Recipes() {
                   data.recipe.totalNutrients.CHOCDF.quantity / data.recipe.yield
                 );
                 return (
-                  <Recipe
+                  <Recipe2
                     key={index}
                     title={data.recipe.label}
-                    imgUrl={data.recipe.images.SMALL.url}
+                    imgUrl={data.recipe.images.REGULAR.url}
                     time={data.recipe.totalTime}
                     servings={data.recipe.yield}
                     calories={caloriesPerServing}
@@ -179,6 +180,8 @@ export default function Recipes() {
                     url={data.recipe.url}
                     ingredients={data.recipe.ingredients}
                     idLink={data._links.self.href}
+                    mealType={data.recipe.mealType}
+                    dietLabels={data.recipe.dietLabels}
                   />
                 );
               })}

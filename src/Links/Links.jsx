@@ -4,40 +4,40 @@ import Link from "./Link";
 export default function Links() {
   const [visibleButton, setVisibleButton] = useState("0");
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     // window width and height
-  //     const top = Math.round(document.documentElement.scrollTop);
+  useEffect(() => {
+    const handleScroll = () => {
+      // window width and height
+      const top = Math.round(document.documentElement.scrollTop);
 
-  //     // // div width and height
-  //     const welcomeTop = welcomeSection.offsetTop;
-  //     const websiteDetailsTop = websiteDetailsSection.offsetTop;
-  //     const ingredientsTop = ingredientsSection.offsetTop;
-  //     const recipesTop = recipesSection.offsetTop;
+      // // div width and height
+      const welcomeTop = welcomeSection.offsetTop;
+      const websiteDetailsTop = websiteDetailsSection.offsetTop;
+      const ingredientsTop = ingredientsSection.offsetTop;
+      const recipesTop = recipesSection.offsetTop;
 
-  //     if (recipesTop <= top) {
-  //       setVisibleButton("3");
-  //     } else if (ingredientsTop <= top) {
-  //       setVisibleButton("2");
-  //     } else if (websiteDetailsTop <= top) {
-  //       setVisibleButton("1");
-  //     } else if (welcomeTop <= top) {
-  //       setVisibleButton("0");
-  //     }
-  //   };
+      if (recipesTop <= top) {
+        setVisibleButton("3");
+      } else if (ingredientsTop <= top) {
+        setVisibleButton("2");
+      } else if (websiteDetailsTop <= top) {
+        setVisibleButton("1");
+      } else if (welcomeTop <= top) {
+        setVisibleButton("0");
+      }
+    };
 
-  //   const welcomeSection = document.getElementById("welcome-section");
-  //   const websiteDetailsSection = document.getElementById(
-  //     "website-details-section"
-  //   );
-  //   const ingredientsSection = document.getElementById("ingredients-section");
-  //   const recipesSection = document.getElementById("recipes-section");
-  //   window.addEventListener("scroll", handleScroll);
+    const welcomeSection = document.getElementById("welcome-section");
+    const websiteDetailsSection = document.getElementById(
+      "website-details-section"
+    );
+    const ingredientsSection = document.getElementById("ingredients-section");
+    const recipesSection = document.getElementById("recipes-section");
+    window.addEventListener("scroll", handleScroll);
 
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <span className="fixed right-2 top-1/2 translate-y-[-1/2] z-20 mr-3">

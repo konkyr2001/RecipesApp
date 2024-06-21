@@ -43,7 +43,7 @@ export default function Favorites() {
 
   return (
     <div
-      className="relative"
+      className="relative z-20"
       style={{
         fontFamily: "Quicksand, sans-serif",
         userSelect: "none",
