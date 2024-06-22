@@ -77,7 +77,7 @@ export default function Favorites() {
         className="absolute bg-slate-400 rounded-[20px] min-w-[200px] w-auto max-w-[400px] mt-10 z-20 px-1 -right-20  max-h-[470px]"
         ref={modalRef}
       >
-        <div className="triangle bg-transparent border-b-slate-400 absolute right-[78px] -top-8 border-[17px]"></div>
+        <div className="triangle bg-transparent border-b-slate-400 absolute right-[78px] -top-8 border-[17px] after:border-none"></div>
         {favorites.length === 0 ? (
           <p className="text-center w-2/3 mx-auto my-6 text-sm">
             No favourite recipes found yet
@@ -110,7 +110,7 @@ export default function Favorites() {
                           className="fa-solid fa-fire-flame-simple text-red-400 m-0"
                           title="Calories per 100gr"
                         >
-                          {favorite.calories}
+                          <span className="ml-1">{favorite.calories}</span>
                         </i>
                       </p>
                     </li>
@@ -119,8 +119,19 @@ export default function Favorites() {
                         <i
                           className="fa-solid fa-dumbbell m-0"
                           title="Protein per 100gr"
+                          style={{ color: favorite.proteinColor }}
                         >
-                          {favorite.protein}
+                          <span className="ml-1">{favorite.protein}</span>
+                        </i>
+                      </p>
+                    </li>
+                    <li className="ml-5 inline-block">
+                      <p>
+                        <i
+                          className="fa-solid fa-clock m-0 text-neutral-600"
+                          title="Protein per 100gr"
+                        >
+                          <span className="ml-1">{favorite.time}</span>
                         </i>
                       </p>
                     </li>

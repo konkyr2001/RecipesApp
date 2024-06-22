@@ -3,9 +3,22 @@
   height: 0;
   border-style: solid;
   border-width: 0 10px 10px 10px;
+  border-color: transparent transparent black transparent;
+}
+
+.triangle::after {
+  content: "";
+  position: absolute;
+  right: 1px;
+  bottom: 0px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 9px 9px 9px;
   border-color: transparent transparent #ebe9e9 transparent;
 }
 
-.question-modal > div:nth-child(2) {
+.question-modal > div > div:nth-child(2) {
   background-color: #ebe9e9;
+  border: solid black 1px;
 }

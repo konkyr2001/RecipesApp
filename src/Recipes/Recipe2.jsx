@@ -60,7 +60,7 @@ export default function Recipe({
 
   function handleLikeButton(value) {
     setLike(value);
-
+    console.log(proteinColorStyle.color);
     if (value) {
       dispatch({
         type: "ADD_FAVORITE",
@@ -68,7 +68,9 @@ export default function Recipe({
           idLink,
           imgUrl,
           title,
+          time,
           protein,
+          proteinColor: proteinColorStyle.color,
           calories,
           url,
         },
@@ -84,21 +86,20 @@ export default function Recipe({
   }
 
   return (
-    <div className="recipe-container min-w-[450px] max-w-[450px] text-center items-center relative cursor-default max-h-[550px] gap-0 min-h-[400px] my-10 rounded-xl flex flex-wrap flex-col border-2 border-solid border-gray-300 px-4 hover:opacity-80 duration-200 font-Montserrat bg-slate-100">
+    <div className="recipe-container min-w-[450px] max-w-[450px] text-center items-center relative cursor-default max-h-[550px] gap-0 min-h-[400px] my-10 rounded-xl flex flex-wrap flex-col border-2 border-solid border-gray-300 px-4 font-Montserrat bg-slate-100">
       {proteinColorStyle.color != "black" && (
         <i
           className="fa-solid fa-medal absolute top-[15px] right-[10px] text-green-600 text-[23px] cursor-pointer"
-          onClick={() => setCaloriesQuestionVisibility((prevState) => !prevState)}
+          onClick={() =>
+            setCaloriesQuestionVisibility((prevState) => !prevState)
+          }
           style={proteinColorStyle}
           title={
             proteinColorStyle.color === "orange"
               ? "High in protein"
               : "Time to make serious gains!"
           }
-        >
-      <QuestionModal visibility={caloriesQuestionVisibility} message={"This is high in"} />
-
-        </i>
+        ></i>
       )}
       <span className="absolute right-[40px] top-[7px]">
         <like-effects checked={likeInitialValue} width="40px" height="40px">
@@ -120,12 +121,16 @@ export default function Recipe({
           ></motion.i>
         </like-effects>
       </span>
-      <a href={url} target="_blank" className="w-[300px] h-[300px] mt-5">
+      <a
+        href={url}
+        target="_blank"
+        className="w-[300px] h-[300px] mt-7 overflow-hidden rounded-[10px] hover:opacity-80 duration-300 ease-in-out"
+      >
         <img
           src={imgUrl}
           alt={`Image for recipe ${title}`}
           title={title}
-          className="w-full h-full recipe-image rounded-[20px] border-solid border border-gray-300 shadow-md"
+          className="w-full h-full recipe-image rounded-[20px] border-solid border border-gray-300 shadow-md hover:scale-110 duration-300 ease-in-out"
         />
       </a>
       <div className="mt-4 text-slate-600">
@@ -133,7 +138,10 @@ export default function Recipe({
       </div>
       <ul className="text-left pl-[10px] pt-[20px] pb-[20px] text-[15px] flex justify-center flex-row rounded-bl-[9px] w-full">
         <li className="text-[16px]">
-          <i className="fa-solid fa-clock text-neutral-600" title="Time to cook"></i>
+          <i
+            className="fa-solid fa-clock text-neutral-600"
+            title="Time to be cooked"
+          ></i>
           <label className="ml-1">{time} minutes</label>
         </li>
         <li className="text-[16px] mx-5">
@@ -152,20 +160,20 @@ export default function Recipe({
           <label className="ml-1">{protein} protein</label>
         </li>
       </ul>
-      <div className="flex mb-4 w-auto flex-wrap">
-        <div className="rounded-[30px] bg-slate-300 text-black px-3 py-1 mr-4">
+      <ul className="flex mb-4 w-auto flex-wrap justify-center gap-y-2">
+        <li className="rounded-[30px] bg-slate-300 text-black px-3 py-1 mr-4">
           {mealType}
-        </div>
-        {dietLabels && (
+        </li>
+        {dietLabels &&
           dietLabels.map((meal, index) => (
-            <div key={index} className="rounded-[30px] bg-slate-300 text-black px-2 py-1 mr-4">
+            <li
+              key={index}
+              className="rounded-[30px] bg-slate-300 text-black px-2 py-1 mr-4"
+            >
               {meal}
-            </div>
-          ))
-        )}
-      </div>
-
-
+            </li>
+          ))}
+      </ul>
     </div>
 
     // <div className="recipe-container min-w-[510px] max-w-[600px] text-center justify-center relative cursor-default max-h-[550px] gap-0 min-h-[400px] my-10">
