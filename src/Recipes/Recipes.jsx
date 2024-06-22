@@ -3,11 +3,9 @@ import "./Recipes.css";
 import Recipe2 from "./Recipe2";
 import { useState, useRef, useEffect } from "react";
 import { useSelector } from "react-redux";
-import SortingMenu from "../SortingMenu/SortingMenu";
+import RecipesHeader from "./RecipesHeader";
 import Loading from "./Loading";
 import RecipesNotFound from "./RecipesNotFound";
-import RefreshRecipes from "./RefreshRecipes";
-import Links from "../Links/Links";
 
 const appId = "b0a6bde2";
 const appKey = "0c6ae1f5e2cfcf08b3445468e5be3fae";
@@ -147,13 +145,13 @@ export default function Recipes() {
       )}
       {data.hits.length > 0 && (
         <>
-          <Links />
-
-          <div className="mb-[15px] float-right">
-            <RefreshRecipes handleRefresh={handleRefresh} />
-            <SortingMenu setSortValue={setSortValue} setSortBy={setSortBy} />
-          </div>
-          <ul className="recipes-list w-full grid gap-x-0 gap-y-5 justify-items-center font-Recursive">
+          <RecipesHeader
+            className="mt-2 mb-0 float-right"
+            handleRefresh={handleRefresh}
+            setSortValue={setSortValue}
+            setSortBy={setSortBy}
+          />
+          <ul className="recipes-list w-full grid gap-x-0 gap-y-2 justify-items-center font-Recursive">
             {data.hits
               .sort((a, b) => sortRecipeBy(a, b, sortValue, sortBy))
               .map((data, index) => {

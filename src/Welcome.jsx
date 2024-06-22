@@ -5,9 +5,9 @@ export default function Welcome() {
   return (
     <div
       id="welcome-section"
-      className="welcome-waves w-full h-[100vh] flex justify-center items-center relative"
+      className="w-full h-[100vh] flex justify-center items-center relative"
     >
-      {/* <div className="custom-shape-divider-top-1718532315">
+      <div className="custom-shape-divider-top-1718532315">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,7 @@ export default function Welcome() {
             fill="url(#gradient)"
           ></path>
         </svg>
-      </div> */}
+      </div>
       <div
         className="w-[85%] h-4/5 z-10 flex justify-center items-center max-h-[500px]"
         id="welcome-section"
@@ -47,7 +47,7 @@ export default function Welcome() {
             </span>
           </p>
           <a
-            className="rounded-[20px] text-lg py-2 px-4 bg-green-400 shadow-md cursor-pointer hover:bg-green-500"
+            className="rounded-[20px] text-lg py-2 px-4 bg-green-400 shadow-md cursor-pointer hover:bg-green-500 hover:shadow-lg duration-200"
             href="#ingredients-section"
           >
             <p className="inline-block">Find your recipe</p>

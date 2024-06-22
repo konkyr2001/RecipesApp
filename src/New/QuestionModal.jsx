@@ -16,7 +16,7 @@ export default function QuestionModal({ visibility, message }) {
     >
       <div>
         <div className="triangle"></div>
-        <div className="min-w-[210px] rounded-xl absolute left-1/2 -translate-x-1/2 py-2 px-4 text-[14px] font-Montserrat font-normal">
+        <div className="min-w-[210px] rounded-xl absolute left-1/2 -translate-x-1/2 py-2 px-2 text-[14px] font-Montserrat font-normal">
           <p style={{ textShadow: "black 0px 0px 0px" }}>{message}</p>
         </div>
       </div>

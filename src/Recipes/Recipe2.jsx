@@ -86,7 +86,7 @@ export default function Recipe({
   }
 
   return (
-    <div className="recipe-container min-w-[450px] max-w-[450px] text-center items-center relative cursor-default max-h-[550px] gap-0 min-h-[400px] my-10 rounded-xl flex flex-wrap flex-col border-2 border-solid border-gray-300 px-4 font-Montserrat bg-slate-100">
+    <div className="recipe-container min-w-[450px] max-w-[450px] text-center items-center relative cursor-default gap-0 my-10 rounded-xl flex flex-wrap flex-col border-2 border-solid border-gray-300 px-4 font-Montserrat bg-slate-200">
       {proteinColorStyle.color != "black" && (
         <i
           className="fa-solid fa-medal absolute top-[15px] right-[10px] text-green-600 text-[23px] cursor-pointer"
@@ -124,7 +124,7 @@ export default function Recipe({
       <a
         href={url}
         target="_blank"
-        className="w-[300px] h-[300px] mt-7 overflow-hidden rounded-[10px] hover:opacity-80 duration-300 ease-in-out"
+        className="w-[300px] h-[300px] mt-7 overflow-hidden rounded-[20px] hover:opacity-80 duration-300 ease-in-out"
       >
         <img
           src={imgUrl}

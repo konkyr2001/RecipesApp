@@ -66,9 +66,6 @@ export default function Recipe({
           url,
         },
       });
-      // let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-      // favorites.push(idLink);
-      // localStorage.setItem("favorites", JSON.stringify(favorites));
     } else {
       dispatch({
         type: "REMOVE_FAVORITE",
@@ -76,9 +73,6 @@ export default function Recipe({
           title,
         },
       });
-      // let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-      // favorites = favorites.filter((id) => id !== idLink);
-      // localStorage.setItem("favorites", JSON.stringify(favorites));
     }
   }
 

@@ -1,19 +1,17 @@
 import { useState, useEffect, useRef } from "react";
 import QuestionModal from "./QuestionModal";
+import { motion } from "framer-motion";
 
-export default function QuestionButton({ text }) {
+export default function QuestionButton({ text, extraClass }) {
   const [modalVisibility, setModalVisibility] = useState(false);
   const buttonRef = useRef();
   const iRef = useRef();
 
   useEffect(() => {
     function handleClickOutside(event) {
-      const modal = document.getElementById("question-modal");
-
       // Check if the click is outside the modal and not on the button or icon
       if (
-        modal &&
-        !modal.contains(event.target) &&
+        !buttonRef.current.parentNode.contains(event.target) &&
         event.target !== buttonRef.current &&
         event.target !== iRef.current
       ) {
@@ -27,19 +25,21 @@ export default function QuestionButton({ text }) {
     };
   }, []);
   return (
-    <div className="inline-block relative">
-      <button
+    <div className={`inline-block relative ${extraClass}`}>
+      <motion.button
         id="question-button"
         className="rounded-[50%] outline outline-2 outline-slate-400 w-4 h-4 flex justify-center items-center ml-2"
         onClick={() => setModalVisibility((prevState) => !prevState)}
         ref={buttonRef}
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.8 }}
       >
         <i
           id="question-icon"
           className="fa-solid fa-question text-[13px]"
           ref={iRef}
         ></i>
-      </button>
+      </motion.button>
       <QuestionModal visibility={modalVisibility} message={text} />
     </div>
   );
