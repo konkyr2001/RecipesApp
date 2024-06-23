@@ -127,7 +127,7 @@ export default function Recipes() {
   return (
     <div
       // className="h-[90%] w-3/4 px-[30px] rounded-[10px] recipes-container mt-[30px]"
-      className="section w-full px-[30px] rounded-[10px] recipes-container"
+      className="section w-full px-[30px] recipes-container"
       id="recipes-section"
     >
       {notFound && (
@@ -146,7 +146,7 @@ export default function Recipes() {
       {data.hits.length > 0 && (
         <>
           <RecipesHeader
-            className="mt-2 mb-0 float-right"
+            className="mt-2 mb-0 mr-5 float-right"
             handleRefresh={handleRefresh}
             setSortValue={setSortValue}
             setSortBy={setSortBy}

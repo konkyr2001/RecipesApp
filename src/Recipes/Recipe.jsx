@@ -94,7 +94,7 @@ export default function Recipe({
           <motion.i
             slot="unchecked"
             onClick={() => handleLikeButton(true)}
-            className="fa-regular fa-heart rounded-[50%]  cursor-pointer text-[24px] p-2"
+            className="fa-regular fa-heart rounded-[50%] text-[24px] p-2"
             whileHover={{ backgroundColor: "rgba(255, 0, 0, 0.2)", scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
             style={{ color: "red" }}

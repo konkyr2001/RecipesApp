@@ -24,28 +24,28 @@
   position: absolute;
   /* right: -28px; */
   /* top: calc(50% - 14px); */
-  top: -30px;
-  right: 12px;
+  top: -29px;
+  right: 19px;
   rotate: -90deg;
   width: 23px;
-  height: 28px;
+  height: 27.8px;
   z-index: 1;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 0H0v8h12v4h4v4h-4v4H0v8h4v-4h8v-4h4v-4h8v-4h-8V8h-4V4H4V0z' fill='%230038FF'/%3E%3Cpath fill='%23161616' d='M0 8h4v12H0z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 23 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 0H0v8h12v4h4v4h-4v4H0v8h4v-4h8v-4h4v-4h8v-4h-8V8h-4V4H4V0z' fill='%230038FF'/%3E%3Cpath fill='%23161616' d='M0 8h4v12H0z'/%3E%3C/svg%3E");
 }
 
 .box:after {
   content: "";
   position: absolute;
   top: -26px;
-  right: 14px;
+  right: 18px;
   /* width: 20px; */
   /* height: 20px; */
   z-index: 0;
 
   /* traingle for background color */
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 19px solid #165d8b;
+  border-left: 13px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 22px solid #165d8b;
 }
 
 .box > p {

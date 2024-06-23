@@ -162,7 +162,7 @@ export default function SearchIngredients() {
           >
             Set protein
             <i
-              className="fa-solid fa-dumbbell text-green-600"
+              className="fa-solid fa-dumbbell text-green-500 ml-3 mr-3"
               title="Protein per 100gr"
             ></i>
           </label>

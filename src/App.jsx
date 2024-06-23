@@ -5,6 +5,7 @@ import Widgets from "./Widgets";
 import Welcome from "./Welcome";
 import WebsiteDetails from "./WebsiteDetails";
 import Links from "./Links/Links";
+import Footer from "./Footer";
 
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
@@ -32,6 +33,7 @@ function App() {
         <Recipes />
         <Widgets />
         <Links />
+        <Footer />
       </div>
     </>
   );

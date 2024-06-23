@@ -89,7 +89,7 @@ export default function Recipe({
     <div className="recipe-container min-w-[450px] max-w-[450px] text-center items-center relative cursor-default gap-0 my-10 rounded-xl flex flex-wrap flex-col border-2 border-solid border-gray-300 px-4 font-Montserrat">
       {proteinColorStyle.color != "black" && (
         <i
-          className="fa-solid fa-medal absolute top-[15px] right-[10px] text-green-600 text-[23px] cursor-pointer"
+          className="fa-solid fa-medal absolute top-[15px] right-[10px] text-green-600 text-[23px]"
           onClick={() =>
             setCaloriesQuestionVisibility((prevState) => !prevState)
           }
