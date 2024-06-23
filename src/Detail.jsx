@@ -27,7 +27,7 @@ export default function Detail({ image, title, description, from, to }) {
       <div className="w-full flex justify-center items-center h-1/3">
         <img
           width="110"
-          className="rounded-[50%] p-1 cursor-default"
+          className="p-1 cursor-default rounded-[50%] bg-slate-300 outline-[5px] outline-slate-100 outline"
           src={image}
           alt="img"
         />

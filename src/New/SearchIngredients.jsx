@@ -1,5 +1,5 @@
 import "./SearchIngredients.css";
-import img from "../img/cooking.jpg";
+import img from "../img/ingredientsBackgroundImage.jpg";
 import SelectIngredients from "./SelectIngredients";
 import QuestionModal from "./QuestionModal";
 import QuestionButton from "./QuestionButton";
@@ -127,16 +127,16 @@ export default function SearchIngredients() {
         className="absolute w-full h-[100vh] bg-cover bg-bottom top-0 left-0 block"
         style={{
           backgroundImage: `url(${img})`,
-          backgroundAttachment: "fixed",
-          filter: "blur(2px)",
-          WebkitFilter: "blur(2px)",
+          // backgroundAttachment: "fixed",
+          // filter: "blur(2px)",
+          // WebkitFilter: "blur(2px)",
         }}
       ></div>
       <div className="ingredients-filter-container w-[800px] h-1/2 relative">
         <div className="calories-container absolute w-full h-1/4 flex justify-center items-center gap-10">
           <label
             htmlFor="slider"
-            style={{ color: "white", textShadow: "black 0px 0px 5px" }}
+            // style={{ color: "white", textShadow: "black 0px 0px 5px" }}
           >
             Set Calories
             <i
@@ -147,7 +147,7 @@ export default function SearchIngredients() {
           <div
             id="slider"
             className="inline-block w-[400px] m-0"
-            style={{ color: "white", textShadow: "black 0px 0px 3px" }}
+            // style={{ color: "white", textShadow: "black 0px 0px 3px" }}
             ref={sliderRef}
           ></div>
           <QuestionButton
@@ -158,7 +158,7 @@ export default function SearchIngredients() {
         <div className="protein-container absolute top-1/4  w-full h-1/4 flex justify-center items-center">
           <label
             htmlFor="protein-input"
-            style={{ color: "white", textShadow: "black 0px 0px 5px" }}
+            // style={{ color: "white", textShadow: "black 0px 0px 5px" }}
           >
             Set protein
             <i
@@ -170,7 +170,7 @@ export default function SearchIngredients() {
             type="number"
             id="protein-input"
             className="p-[5px] ml-[10px] w-[55px] bg-blue-300 h-[30px] rounded-[20px] border-gray-200 border-solid border-2 text-center transition ease-in-out delay-70 focus:outline-none focus:border-gray-400"
-            style={{ color: "white", textShadow: "black 0px 0px 5px" }}
+            // style={{ color: "white", textShadow: "black 0px 0px 5px" }}
             onChange={handleProtein}
             placeholder="0"
             ref={proteinRef}
@@ -203,13 +203,13 @@ export default function SearchIngredients() {
             <label
               className="ml-[5px]"
               htmlFor="only-ingredients-checkbox"
-              style={{ color: "white", textShadow: "black 0px 0px 5px" }}
+              // style={{ color: "white", textShadow: "black 0px 0px 5px" }}
             >
               I have only this ingredients
             </label>
             <QuestionButton
               text="Check the checkbox if you only want recipes with the ingredients you just added."
-              extraClass="ml-5 mt-1"
+              extraClass="ml-5 mt-[3px]"
             />
           </span>
         </div>
@@ -218,10 +218,10 @@ export default function SearchIngredients() {
           className="sarch-div absolute top-[78%] w-full h-1/4 flex justify-center items-center"
         >
           <button
-            className="bg-green-300 rounded-t-[20px] rounded-bl-[20px] py-[5px] px-[10px] border-solid border-blue-300 border-2 h-[40px] mb-[15px] transition-all ease delay-50 hover:bg-green-400 hover:border-blue-400 hover:rounded-br-[20px] active:bg-green-700 active:border-blue-700"
+            className="bg-emerald-500 rounded-t-[20px] rounded-bl-[20px] py-[5px] px-[10px] border-solid border-blue-300 border-2 h-[40px] mb-[15px] transition-all ease delay-50 hover:bg-emerald-600 hover:border-blue-400 hover:rounded-br-[20px] active:bg-emerald-700 active:border-blue-700"
             onClick={handleSearch}
             type="submit"
-            style={{ color: "white", textShadow: "black 0px 0px 5px" }}
+            // style={{ color: "white", textShadow: "black 0px 0px 5px" }}
           >
             Search
           </button>

@@ -8,7 +8,6 @@ export default function DetailsContainer({
   from,
   to,
 }) {
-
   return (
     <div className="w-full h-full shadow-md rounded-xl bg-blue-300">
       <div
@@ -22,13 +21,13 @@ export default function DetailsContainer({
         //   hidden: { opacity: 0, scale: 0 },
         // }}
       >
-          <Detail
-            image={image}
-            title={title}
-            description={description}
-            from={from}
-            to={to}
-          />
+        <Detail
+          image={image}
+          title={title}
+          description={description}
+          from={from}
+          to={to}
+        />
       </div>
     </div>
   );
