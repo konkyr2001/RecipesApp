@@ -27,9 +27,7 @@ export default function Welcome() {
           ></path>
         </svg>
       </div>
-      <div
-        className="w-[85%] h-4/5 z-10 flex justify-center items-center max-h-[500px]"
-      >
+      <div className="w-[85%] h-4/5 z-10 flex justify-center items-center max-h-[500px]">
         <div className="w-1/2 mr-5 h-auto">
           <h1 className="text-4xl font-semibold font-Montserrat">
             Find the recipes <br></br> that suits best for you!
@@ -58,6 +56,15 @@ export default function Welcome() {
             src={homepageImg}
             alt="HomePage image"
             className="cursorPointer rounded-xl bg-cover opacity-90 max-h-[500px] cursor-default"
+            initial="hidden"
+            whileInView="visible"
+            exit={{ opacity: 0, x: 300 }}
+            viewport={{ once: true }}
+            transition={{ duration: 2, delay: 2 }}
+            variants={{
+              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, x: 300 },
+            }}
           />
         </div>
       </div>

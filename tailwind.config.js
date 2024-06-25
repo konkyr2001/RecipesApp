@@ -4,16 +4,16 @@ export default {
   theme: {
     extend: {
       transitionProperty: {
-        'width': 'width',
+        width: "width",
       },
       fontFamily: {
-        'Quicksand': ["Quicksand", "sans-serif"],
-        'Rubik': ["Rubik", "sans-serif"],
-        "Poppins": ["Poppins", "sans-serif"],
-        "NunitoSans": ["Nunito Sans", "sans-serif"],
-        "NotoSans": ["Noto Sans", "sans-serif"],
-        "Recursive": ["Recursive", "sans-serif"],
-        "Montserrat": ["Montserrat", "sans-serif"],
+        Quicksand: ["Quicksand", "sans-serif"],
+        Rubik: ["Rubik", "sans-serif"],
+        Poppins: ["Poppins", "sans-serif"],
+        NunitoSans: ["Nunito Sans", "sans-serif"],
+        NotoSans: ["Noto Sans", "sans-serif"],
+        Recursive: ["Recursive", "sans-serif"],
+        Montserrat: ["Montserrat", "sans-serif"],
       },
     },
   },

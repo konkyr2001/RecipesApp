@@ -12,15 +12,14 @@ export default function WebsiteDetails() {
       className="relative w-[full] h-[100vh] flex justify-center items-center"
     >
       <ul className="w-full flex justify-center items-center gap-5">
-        <li className="w-1/5 h-[400px]">
+        <li className="w-[300px] h-[400px]">
           <DetailsContainer
             image={nutritionImg}
             title={"Macros"}
             description={
               "Customize your meal’s nutrients for a balanced and delicious dish!"
             }
-            from={0}
-            // to={1000}
+            delay="0"
           />
         </li>
         <li className="w-1/5 h-[400px]">
@@ -30,7 +29,7 @@ export default function WebsiteDetails() {
             description={
               "Choose your favorite ingredients and find the recipe that suits you the best!"
             }
-            from={0}
+            delay="0.4"
           />
         </li>
         <li className="w-1/5 h-[400px]">
@@ -40,7 +39,7 @@ export default function WebsiteDetails() {
             description={
               "Find bunch of recipes according to your cravings and become the best chef of the house!"
             }
-            from={0}
+            delay="0.8"
           />
         </li>
         <li className="w-1/5 h-[400px]">
@@ -50,7 +49,7 @@ export default function WebsiteDetails() {
             description={
               "Save your favorite recipes so you can come back anytime and re-create them!"
             }
-            from={0}
+            delay="1.2"
           />
         </li>
       </ul>

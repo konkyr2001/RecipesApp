@@ -9,6 +9,8 @@ import "nouislider/dist/nouislider.css";
 import { useState, useRef, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
+import { motion } from "framer-motion";
+
 export default function SearchIngredients() {
   const [sliderInitialized, setSliderInitialized] = useState(false);
   const sliderRef = useRef();
@@ -221,7 +223,6 @@ export default function SearchIngredients() {
             className="bg-emerald-500 rounded-t-[20px] rounded-bl-[20px] py-[5px] px-[10px] border-solid border-blue-300 border-2 h-[40px] mb-[15px] transition-all ease delay-50 hover:bg-emerald-600 hover:border-blue-400 hover:rounded-br-[20px] active:bg-emerald-700 active:border-blue-700"
             onClick={handleSearch}
             type="submit"
-            // style={{ color: "white", textShadow: "black 0px 0px 5px" }}
           >
             Search
           </button>

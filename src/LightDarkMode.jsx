@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "./LightDarkMode.css";
 import lightSvg from "./img/brightness-high.svg";
@@ -14,6 +14,10 @@ export default function LightDarkMode() {
   const [isOn, setIsOn] = useState(false);
 
   const toggleSwitch = () => setIsOn(!isOn);
+
+  useEffect(() => {
+    console.log(isOn);
+  }, [isOn]);
 
   return (
     <motion.div

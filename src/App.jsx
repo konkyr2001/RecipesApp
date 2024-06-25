@@ -12,15 +12,6 @@ import { useSelector } from "react-redux";
 function App() {
   const favorites = useSelector((state) => state.favoriteStore.favoriteRecipes);
 
-  useEffect(() => {
-    async function scroll() {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
-    }
-
-    scroll();
-  }, []);
-
   return (
     <>
       <div
