@@ -1,5 +1,7 @@
 #welcome-section {
   background-color: #affafa;
+  background: linear-gradient(to bottom, #affafa 90%, #90e0ff 98%);
+
 }
 
 .welcome-section-background {

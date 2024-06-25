@@ -54,3 +54,7 @@ i {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+
+.cursorPointer {
+  cursor: default !important;
+}

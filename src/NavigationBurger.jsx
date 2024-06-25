@@ -35,7 +35,7 @@ export default function NavigationBurger() {
                 href="https://www.linkedin.com/in/konstantinos-kyriazopoulos-4a44b8233/"
                 target="_blank"
               >
-                <i className="fa-brands fa-linkedin text-[35px] text-blue-600 "></i>
+                <i className="fa-brands fa-linkedin text-[35px] text-blue-600"></i>
               </a>
             </li>
             <li className="mx-3">

@@ -9,7 +9,7 @@ export default function WebsiteDetails() {
   return (
     <div
       id="website-details-section"
-      className="details-waves relative w-[full] h-[100vh] flex justify-center items-center"
+      className="relative w-[full] h-[100vh] flex justify-center items-center"
     >
       <ul className="w-full flex justify-center items-center gap-5">
         <li className="w-1/5 h-[400px]">

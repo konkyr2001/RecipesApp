@@ -29,7 +29,6 @@ export default function Welcome() {
       </div>
       <div
         className="w-[85%] h-4/5 z-10 flex justify-center items-center max-h-[500px]"
-        id="welcome-section"
       >
         <div className="w-1/2 mr-5 h-auto">
           <h1 className="text-4xl font-semibold font-Montserrat">
@@ -58,7 +57,7 @@ export default function Welcome() {
           <img
             src={homepageImg}
             alt="HomePage image"
-            className="rounded-xl bg-cover opacity-90 max-h-[500px]"
+            className="cursorPointer rounded-xl bg-cover opacity-90 max-h-[500px] cursor-default"
           />
         </div>
       </div>

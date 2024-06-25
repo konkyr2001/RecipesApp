@@ -21,6 +21,25 @@ const customStyles = {
     borderRadius: 10,
     padding: 0,
     backgroundColor: "transparent",
+    "::-webkit-scrollbar": {
+      width: "10px",
+      margin: "20px",
+      padding: "10px"
+    },
+    "::-webkit-scrollbar-track": {
+      display: "none",
+      background: "#f1f1f1",
+    },
+    "::-webkit-scrollbar-button": {
+      height: "5px"
+    },
+    "::-webkit-scrollbar-thumb": {
+      background: "#888",
+      borderRadius: "20px",
+    },
+    "::-webkit-scrollbar-thumb:hover": {
+      background: "#6d6d6d"
+    }
   }),
   option: (styles) => {
     return {
@@ -85,7 +104,6 @@ export default function SelectIngredients({
     }
   }
 
-  console.log(selectedIngredients);
   return (
     <Select
       isMulti

@@ -127,7 +127,7 @@ export default function Recipes() {
   return (
     <div
       // className="h-[90%] w-3/4 px-[30px] rounded-[10px] recipes-container mt-[30px]"
-      className="section w-full px-[30px] recipes-container"
+      className="section w-full recipes-container pb-14"
       id="recipes-section"
     >
       {notFound && (
@@ -146,12 +146,13 @@ export default function Recipes() {
       {data.hits.length > 0 && (
         <>
           <RecipesHeader
-            className="mt-2 mb-0 mr-5 float-right"
+            className="mt-7 mb-0 mr-5 float-right"
             handleRefresh={handleRefresh}
             setSortValue={setSortValue}
             setSortBy={setSortBy}
           />
-          <ul className="recipes-list w-full grid gap-x-0 gap-y-2 justify-items-center font-Recursive">
+          {/* <ul className="recipes-list w-full grid gap-x-0 gap-y-2 justify-items-center font-Recursive"> */}
+          <ul className="recipes-list w-full px-12 py-5 flex flex-wrap items-start gap-x-11 justify-center font-Recursive">
             {data.hits
               .sort((a, b) => sortRecipeBy(a, b, sortValue, sortBy))
               .map((data, index) => {
@@ -176,7 +177,7 @@ export default function Recipes() {
                     protein={proteinPerServing}
                     carbs={carbsPerServing}
                     url={data.recipe.url}
-                    ingredients={data.recipe.ingredients}
+                    ingredients={data.recipe.ingredients.length}
                     idLink={data._links.self.href}
                     mealType={data.recipe.mealType}
                     dietLabels={data.recipe.dietLabels}

@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import "./Favorites.css";
+import IngredientsImg from "./img/ingredients.png";
 
 export default function Favorites() {
   const favorites = useSelector((state) => state.favoriteStore.favoriteRecipes);
@@ -74,10 +75,10 @@ export default function Favorites() {
           closed: { scale: 0, opacity: 0 },
         }}
         animate={showFavorites ? "open" : "closed"}
-        className="absolute bg-slate-400 rounded-[20px] min-w-[200px] w-auto max-w-[400px] mt-10 z-20 px-1 -right-20  max-h-[470px]"
+        className="absolute bg-slate-100 rounded-[20px] min-w-[200px] w-auto max-w-[400px] mt-10 z-20 px-1 -right-20  max-h-[470px]"
         ref={modalRef}
       >
-        <div className="triangle bg-transparent border-b-slate-400 absolute right-[78px] -top-8 border-[17px] after:border-none"></div>
+        <div className="triangle bg-transparent border-b-slate-100 absolute right-[78px] -top-8 border-[17px] after:border-none"></div>
         {favorites.length === 0 ? (
           <p className="text-center w-2/3 mx-auto my-6 text-sm">
             No favourite recipes found yet
@@ -92,12 +93,12 @@ export default function Favorites() {
                 <a
                   href={favorite.url}
                   target="_blank"
-                  className="min-w-[100px] h-[100px] rounded-md"
+                  className="min-w-[100px] h-[100px] rounded-md overflow-hidden hover:opacity-75 duration-300 ease-in-out cursor-pointer"
                 >
                   <img
                     alt="Recipe image"
                     src={favorite.imgUrl}
-                    className="w-full h-full rounded-md"
+                    className="w-full h-full rounded-md hover:scale-110 duration-300 ease-in-out"
                   />
                 </a>
                 <div className="inline-block flex-row w-full">
@@ -127,11 +128,12 @@ export default function Favorites() {
                     </li>
                     <li className="ml-5 inline-block">
                       <p>
-                        <i
-                          className="fa-solid fa-clock m-0 text-neutral-600"
-                          title="Protein per 100gr"
-                        >
-                          <span className="ml-1">{favorite.time}</span>
+                        <img src={IngredientsImg} alt="Ingredients icon" title="Ingredients needed for recipe"
+                        className="cursorPointer m-0 inline-block pb-1"
+                        width={25}
+                      />
+                        <i className="fa-solid text-gray-400">
+                          <span className="ml-1">{favorite.ingredients}</span>
                         </i>
                       </p>
                     </li>
