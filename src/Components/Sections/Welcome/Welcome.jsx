@@ -1,4 +1,4 @@
-import homepageImg from "./img/Welcome-Section/homepage.jpg";
+import homePageImg from "../../../Images/Sections/Welcome/homepage.jpg";
 import "./Welcome.css";
 
 export default function Welcome() {
@@ -32,7 +32,10 @@ export default function Welcome() {
           <h1 className="text-4xl font-semibold font-Montserrat">
             Find the recipes <br></br> that suits best for you!
           </h1>
-          <h1 className="mix-title text-4xl font-Montserrat" id="welcome-mix-title">
+          <h1
+            className="mix-title text-4xl font-Montserrat"
+            id="welcome-mix-title"
+          >
             Taste the Joy of Cooking!
           </h1>
           <p className="text-lg text-slate-500 font-Montserrat mt-10 tracking-tight mb-7">
@@ -53,7 +56,7 @@ export default function Welcome() {
         </div>
         <div className="max-w-[60%]">
           <img
-            src={homepageImg}
+            src={homePageImg}
             alt="HomePage image"
             className="cursorPointer rounded-xl bg-cover opacity-90 max-h-[500px] cursor-default"
           />

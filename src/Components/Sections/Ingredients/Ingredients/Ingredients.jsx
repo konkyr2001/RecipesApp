@@ -1,15 +1,13 @@
-import "./SearchIngredients.css";
-import img from "../img/Ingredients-Section/background.jpg";
-import SelectIngredients from "./SelectIngredients";
-import QuestionModal from "./QuestionModal";
-import QuestionButton from "./QuestionButton";
+import "./Ingredients.css";
+import BackgroundImage from "../../../../Images/Sections/Ingredients/background.jpg";
+import SelectIngredients from "../SelectIngredients";
+import QuestionModal from "../../../InformationButton/InformationModal/InformationModal";
+import QuestionButton from "../../../InformationButton/InformationButton";
 
 import * as noUiSlider from "nouislider";
 import "nouislider/dist/nouislider.css";
 import { useState, useRef, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-
-import { motion } from "framer-motion";
 
 export default function SearchIngredients() {
   const [sliderInitialized, setSliderInitialized] = useState(false);
@@ -128,7 +126,7 @@ export default function SearchIngredients() {
       <div
         className="absolute w-full h-[100vh] bg-cover bg-bottom top-0 left-0 block"
         style={{
-          backgroundImage: `url(${img})`,
+          backgroundImage: `url(${BackgroundImage})`,
           // backgroundAttachment: "fixed",
           // filter: "blur(2px)",
           // WebkitFilter: "blur(2px)",

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "./LightDarkMode.css";
-import lightSvg from "./img/Header/lightMode.svg";
-import darkSvg from "./img/Header/darkMode.svg";
+import lightSvg from "../../../Images/Header/lightMode.svg";
+import darkSvg from "../../../Images/Header/darkMode.svg";
 
 const spring = {
   type: "spring",

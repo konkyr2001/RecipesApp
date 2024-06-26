@@ -1,6 +1,6 @@
-import SortingMenu from "../SortingMenu/SortingMenu";
+import SortingMenu from "./SortingMenu/SortingMenu";
 import RefreshRecipes from "./RefreshRecipes";
-import QuestionButton from "../New/QuestionButton";
+import QuestionButton from "../../InformationButton/InformationButton";
 
 export default function RecipesHeader({
   handleRefresh,

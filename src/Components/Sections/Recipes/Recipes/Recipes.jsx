@@ -1,11 +1,10 @@
 import "./Recipes.css";
-// import Recipe from "./Recipe";
-import Recipe2 from "./Recipe2";
+import Recipe from "../Recipe/Recipe";
 import { useState, useRef, useEffect } from "react";
 import { useSelector } from "react-redux";
-import RecipesHeader from "./RecipesHeader";
-import Loading from "./Loading";
-import RecipesNotFound from "./RecipesNotFound";
+import RecipesHeader from "../RecipesHeader";
+import Loading from "../Loading";
+import RecipesNotFound from "../RecipesNotFound/RecipesNotFound";
 
 const appId = "b0a6bde2";
 const appKey = "0c6ae1f5e2cfcf08b3445468e5be3fae";
@@ -170,7 +169,7 @@ export default function Recipes() {
                   data.recipe.totalNutrients.CHOCDF.quantity / data.recipe.yield
                 );
                 return (
-                  <Recipe2
+                  <Recipe
                     key={index}
                     title={data.recipe.label}
                     imgUrl={data.recipe.images.REGULAR.url}

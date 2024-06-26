@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import QuestionModal from "./QuestionModal";
+import QuestionModal from "./InformationModal/InformationModal";
 import { motion } from "framer-motion";
 
 export default function QuestionButton({ text, extraClass }) {

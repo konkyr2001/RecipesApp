@@ -1,13 +1,11 @@
-import "./App.css";
-import SearchIngredients from "./New/SearchIngredients";
-import Recipes from "./Recipes/Recipes";
-import Widgets from "./Widgets";
-import Welcome from "./Welcome";
-import WebsiteDetails from "./WebsiteDetails";
-import Links from "./Links/Links";
-import Footer from "./Footer";
+import SearchIngredients from "./Components/Sections/Ingredients/Ingredients/Ingredients";
+import Recipes from "./Components/Sections/Recipes/Recipes/Recipes";
+import Widgets from "./Components/NavigationBar/Widgets";
+import Welcome from "./Components/Sections/Welcome/Welcome";
+import WebsiteDetails from "./Components/Sections/Details/WebsiteDetails/WebsiteDetails";
+import Links from "./Components/Links/Links";
+import Footer from "./Components/Footer/Footer";
 
-import { useEffect } from "react";
 import { useSelector } from "react-redux";
 function App() {
   const favorites = useSelector((state) => state.favoriteStore.favoriteRecipes);

@@ -1,10 +1,9 @@
-import DetailsContainer from "./DetailsContainer";
-import nutritionImg from "./img/Details-Section/macros.png";
-import foodImg from "./img/Details-Section/ingredients.svg";
-import recipesImg from "./img/Details-Section/recipes2.png";
-import likeImg from "./img/Details-Section/save.svg";
+import DetailsContainer from "../DetailsContainer";
+import nutritionImg from "../../../../Images/Sections/Details/macros.png";
+import foodImg from "../../../../Images/Sections/Details/ingredients.svg";
+import recipesImg from "../../../../Images/Sections/Details/recipes2.png";
+import likeImg from "../../../../Images/Sections/Details/save.svg";
 
-import "./WebsiteDetails.css";
 export default function WebsiteDetails() {
   return (
     <div

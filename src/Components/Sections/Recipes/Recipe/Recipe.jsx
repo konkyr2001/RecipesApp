@@ -4,8 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { motion } from "framer-motion";
 import "like-effects";
 
-import QuestionModal from "../New/QuestionModal";
-import IngredientsImg from "../img/Icons/ingredientsAmount.png";
+import IngredientsImg from "../../../../Images/Icons/ingredientsAmount.png";
 export default function Recipe({
   title,
   imgUrl,
@@ -140,10 +139,10 @@ export default function Recipe({
       <ul className="text-left pl-[10px] pt-[20px] pb-[20px] text-[15px] flex justify-center flex-row rounded-bl-[9px] w-full">
         <li className="text-[16px]">
           <i
-              className="fa-solid fa-fire-flame-simple text-red-400"
-              title="Calories per 100gr"
-            ></i>
-            <label className="ml-1">{calories} kcal</label>
+            className="fa-solid fa-fire-flame-simple text-red-400"
+            title="Calories per 100gr"
+          ></i>
+          <label className="ml-1">{calories} kcal</label>
         </li>
         <li className="text-[16px] mx-5">
           <i
@@ -154,14 +153,22 @@ export default function Recipe({
           <label className="ml-1">{protein} protein</label>
         </li>
         <li className="text-[16px]">
-          <img src={IngredientsImg} alt="Ingredients icon" className="cursorPointer inline-block" width={25} title="Ingredients needed for recipe" />
+          <img
+            src={IngredientsImg}
+            alt="Ingredients icon"
+            className="cursorPointer inline-block"
+            width={25}
+            title="Ingredients needed for recipe"
+          />
           <label className="ml-1">{ingredients} ingredients</label>
         </li>
       </ul>
       <ul className="flex mb-4 w-auto flex-wrap justify-center gap-y-2">
-        <li className={`rounded-[30px] bg-slate-300 text-black px-3 py-1
-          ${dietLabels.length > 0 ? 'mr-4' : ''}
-          `}>
+        <li
+          className={`rounded-[30px] bg-slate-300 text-black px-3 py-1
+          ${dietLabels.length > 0 ? "mr-4" : ""}
+          `}
+        >
           {mealType}
         </li>
         {dietLabels &&
@@ -174,23 +181,27 @@ export default function Recipe({
                 >
                   {meal}
                 </li>
-              )
+              );
             } else {
-                return (
-                  <li
-                    key={index}
-                    className="rounded-[30px] bg-slate-300 text-black px-2 py-1 mr-4"
-                  >
-                    {meal}
-                  </li>
-              )
+              return (
+                <li
+                  key={index}
+                  className="rounded-[30px] bg-slate-300 text-black px-2 py-1 mr-4"
+                >
+                  {meal}
+                </li>
+              );
             }
-
-
           })}
       </ul>
       <div className="h-[30px] relative w-[300px] m-auto my-4">
-        <a href={url} target="_blank" className="p-2 absolute left-1/2 bottom-0 -translate-x-1/2 rounded-lg bg-orange-500 text-white font-Quicksand font-light opacity-80 text-[18px] hover:opacity-100 hover:p-3 duration-300 ease-in-out">Learn more</a>
+        <a
+          href={url}
+          target="_blank"
+          className="p-2 absolute left-1/2 bottom-0 -translate-x-1/2 rounded-lg bg-orange-500 text-white font-Quicksand font-light opacity-80 text-[18px] hover:opacity-100 hover:p-3 duration-300 ease-in-out"
+        >
+          Learn more
+        </a>
       </div>
     </div>
 

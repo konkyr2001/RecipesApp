@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import "./Favorites.css";
-import IngredientsImg from "./img/Icons/ingredientsAmount.png";
+import ingredientsImg from "../../../Images/Icons/ingredientsAmount.png";
 
 export default function Favorites() {
   const favorites = useSelector((state) => state.favoriteStore.favoriteRecipes);
@@ -128,10 +128,13 @@ export default function Favorites() {
                     </li>
                     <li className="ml-5 inline-block">
                       <p>
-                        <img src={IngredientsImg} alt="Ingredients icon" title="Ingredients needed for recipe"
-                        className="cursorPointer m-0 inline-block pb-1"
-                        width={25}
-                      />
+                        <img
+                          src={ingredientsImg}
+                          alt="Ingredients icon"
+                          title="Ingredients needed for recipe"
+                          className="cursorPointer m-0 inline-block pb-1"
+                          width={25}
+                        />
                         <i className="fa-solid text-gray-400">
                           <span className="ml-1">{favorite.ingredients}</span>
                         </i>
