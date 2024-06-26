@@ -6,13 +6,10 @@ export default function Link({
 }) {
   function handleButton(section) {
     const element = document.getElementById(section);
-    element.scrollIntoView(
-      element,
-      {
-        behavior: "smooth",
-        block: "start",
-      },
-    );
+    element.scrollIntoView(element, {
+      behavior: "smooth",
+      block: "start",
+    });
   }
 
   let cssClass =
@@ -23,7 +20,6 @@ export default function Link({
   cssClass += "h-3 hover:h-5";
 
   return (
-    // <a href={section}>
     <button
       className={visibleButton === buttonValue ? cssClickedClass : cssClass}
       onClick={() => handleButton(section)}
@@ -34,6 +30,5 @@ export default function Link({
         }`}
       ></div>
     </button>
-    // </a>
   );
 }

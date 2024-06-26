@@ -1,11 +1,9 @@
 #welcome-section {
   background-color: #affafa;
   background: linear-gradient(to bottom, #affafa 90%, #90e0ff 98%);
-
 }
 
 .welcome-section-background {
-  /* margin: -400px auto 0; */
   right: 0px;
   transform: translateX(50%);
   min-width: 70%;
@@ -29,12 +27,7 @@
   height: 23vh;
 }
 
-.welcome-wave .shape-fill {
-  /* fill: #c2c5f5; */
-  /* background: linear-gradient(#e66465, #29a3bb); */
-}
 .mix-title {
-  /* color: linear-gradient(90, #020024 0%, #090979 28%, #0d9cb9 100%); */
   background: linear-gradient(to right, #6c6cee 20%, #1bc8eb 70%);
   font-weight: 600;
   -webkit-text-fill-color: transparent;

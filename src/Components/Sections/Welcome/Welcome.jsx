@@ -1,4 +1,5 @@
 import homePageImg from "../../../Images/Sections/Welcome/homepage.jpg";
+
 import "./Welcome.css";
 
 export default function Welcome() {

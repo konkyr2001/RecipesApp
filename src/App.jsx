@@ -8,8 +8,6 @@ import Footer from "./Components/Footer/Footer";
 
 import { useSelector } from "react-redux";
 function App() {
-  const favorites = useSelector((state) => state.favoriteStore.favoriteRecipes);
-
   return (
     <>
       <div

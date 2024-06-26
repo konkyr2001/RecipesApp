@@ -1,10 +1,12 @@
-import "./Recipes.css";
-import Recipe from "../Recipe/Recipe";
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
+
+import Recipe from "../Recipe/Recipe";
 import RecipesHeader from "../RecipesHeader";
 import Loading from "../Loading";
 import RecipesNotFound from "../RecipesNotFound/RecipesNotFound";
+
+import "./Recipes.css";
 
 const appId = "b0a6bde2";
 const appKey = "0c6ae1f5e2cfcf08b3445468e5be3fae";
@@ -39,6 +41,7 @@ export default function Recipes() {
   const [data, setData] = useState({
     hits: [],
   });
+
   const [isLoading, setIsLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
   const [error, setError] = useState(null);
@@ -46,8 +49,6 @@ export default function Recipes() {
   const [sortBy, setSortBy] = useState("calories");
 
   const [refresh, setRefresh] = useState(false);
-
-  const errorModalRef = useRef();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -72,7 +73,6 @@ export default function Recipes() {
 
         let response;
         try {
-          // console.log(link);
           response = await fetch(link);
         } catch (error) {
           console.log(`Error with link: ${link}`);
@@ -85,7 +85,6 @@ export default function Recipes() {
         const jsonData = await response.json();
         setRefresh(false);
         if (jsonData.hits.length === 0) {
-          // errorModalRef.current.openModal();
           setNotFound(true);
           return;
         }
@@ -101,16 +100,10 @@ export default function Recipes() {
         // on page reload isSet = false so dont move the page
         if (isSet) {
           const element = document.getElementById("recipes-section");
-          element.scrollIntoView(
-            element,
-            {
-              behavior: "smooth",
-              block: "start",
-            },
-            {
-              // duration: 5000, // aprox. the duration that chrome uses,
-            }
-          );
+          element.scrollIntoView(element, {
+            behavior: "smooth",
+            block: "start",
+          });
         }
       }
     };
@@ -125,21 +118,18 @@ export default function Recipes() {
 
   return (
     <div
-      // className="h-[90%] w-3/4 px-[30px] rounded-[10px] recipes-container mt-[30px]"
       className="section w-full recipes-container pb-14 relative"
       id="recipes-section"
     >
       {notFound && (
         <>
           <RecipesNotFound setNotFound={setNotFound} />
-          {/* <h1 className="bg-red-500 h-[500px]">THIS IS NOT FOUND </h1> */}
         </>
       )}
       {isLoading && <Loading />}
       {error && (
         <>
           <RecipesNotFound setNotFound={setNotFound} />
-          {/* <h1 className="bg-red-500 h-[500px]">THIS IS AN ERROR </h1> */}
         </>
       )}
       {data.hits.length > 0 && (
@@ -150,9 +140,8 @@ export default function Recipes() {
             setSortValue={setSortValue}
             setSortBy={setSortBy}
           />
-          {/* <ul className="recipes-list w-full grid gap-x-0 gap-y-2 justify-items-center font-Recursive"> */}
           <ul
-            className="recipes-list w-full px-12 py-5 flex flex-wrap items-start gap-x-11 justify-center font-Recursive"
+            className="w-full px-12 py-5 flex flex-wrap items-start gap-x-11 justify-center font-Recursive"
             id="recipes-list"
           >
             {data.hits

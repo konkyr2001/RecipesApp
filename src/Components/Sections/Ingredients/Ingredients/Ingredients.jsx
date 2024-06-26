@@ -1,13 +1,14 @@
-import "./Ingredients.css";
-import BackgroundImage from "../../../../Images/Sections/Ingredients/background.jpg";
-import SelectIngredients from "../SelectIngredients";
-import QuestionModal from "../../../InformationButton/InformationModal/InformationModal";
-import QuestionButton from "../../../InformationButton/InformationButton";
-
 import * as noUiSlider from "nouislider";
 import "nouislider/dist/nouislider.css";
 import { useState, useRef, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+
+import SelectIngredients from "../SelectIngredients";
+import QuestionButton from "../../../InformationButton/InformationButton";
+
+import "./Ingredients.css";
+
+import backgroundImg from "../../../../Images/Sections/Ingredients/background.jpg";
 
 export default function SearchIngredients() {
   const [sliderInitialized, setSliderInitialized] = useState(false);
@@ -102,10 +103,6 @@ export default function SearchIngredients() {
 
   function handleSearch(event) {
     event.preventDefault();
-    console.log(ingredients);
-    console.log(onlyIngredients);
-    console.log(calories);
-    console.log(protein);
     dispatch({
       type: "SUBMIT_BUTTON",
       payload: {
@@ -126,18 +123,12 @@ export default function SearchIngredients() {
       <div
         className="absolute w-full h-[100vh] bg-cover bg-bottom top-0 left-0 block"
         style={{
-          backgroundImage: `url(${BackgroundImage})`,
-          // backgroundAttachment: "fixed",
-          // filter: "blur(2px)",
-          // WebkitFilter: "blur(2px)",
+          backgroundImage: `url(${backgroundImg})`,
         }}
       ></div>
       <div className="ingredients-filter-container w-[800px] h-1/2 relative">
         <div className="calories-container absolute w-full h-1/4 flex justify-center items-center gap-10">
-          <label
-            htmlFor="slider"
-            // style={{ color: "white", textShadow: "black 0px 0px 5px" }}
-          >
+          <label htmlFor="slider">
             Set Calories
             <i
               className="fa-solid fa-fire-flame-simple text-red-500 inline-block ml-3"
@@ -147,7 +138,6 @@ export default function SearchIngredients() {
           <div
             id="slider"
             className="inline-block w-[400px] m-0"
-            // style={{ color: "white", textShadow: "black 0px 0px 3px" }}
             ref={sliderRef}
           ></div>
           <QuestionButton
@@ -156,10 +146,7 @@ export default function SearchIngredients() {
           />
         </div>
         <div className="protein-container absolute top-1/4  w-full h-1/4 flex justify-center items-center">
-          <label
-            htmlFor="protein-input"
-            // style={{ color: "white", textShadow: "black 0px 0px 5px" }}
-          >
+          <label htmlFor="protein-input">
             Set protein
             <i
               className="fa-solid fa-dumbbell text-green-500 ml-3 mr-3"
@@ -170,7 +157,6 @@ export default function SearchIngredients() {
             type="number"
             id="protein-input"
             className="p-[5px] ml-[10px] w-[55px] bg-blue-300 h-[30px] rounded-[20px] border-gray-200 border-solid border-2 text-center transition ease-in-out delay-70 focus:outline-none focus:border-gray-400"
-            // style={{ color: "white", textShadow: "black 0px 0px 5px" }}
             onChange={handleProtein}
             placeholder="0"
             ref={proteinRef}
@@ -200,11 +186,7 @@ export default function SearchIngredients() {
               id="only-ingredients-checkbox"
               className="accent-blue-500 hover:accent-blue-500 w-[18px] h-[18px]"
             />
-            <label
-              className="ml-[5px]"
-              htmlFor="only-ingredients-checkbox"
-              // style={{ color: "white", textShadow: "black 0px 0px 5px" }}
-            >
+            <label className="ml-[5px]" htmlFor="only-ingredients-checkbox">
               I have only this ingredients
             </label>
             <QuestionButton

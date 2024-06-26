@@ -1,7 +1,8 @@
-import "./RandomFood.css";
 import { useState, useRef, useEffect } from "react";
 import { foods, size } from "./RandomFoodObjects";
 import { motion } from "framer-motion";
+
+import "./RandomFood.css";
 
 export default function RandomFood() {
   const [random, setRandom] = useState(Math.floor(Math.random() * size));

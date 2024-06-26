@@ -1,6 +1,6 @@
-import React from "react";
-import "./InformationModal.css";
 import { motion } from "framer-motion";
+
+import "./InformationModal.css";
 
 export default function QuestionModal({ visibility, message }) {
   return (

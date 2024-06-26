@@ -1,7 +1,8 @@
-import ErrorImg from "../../../../Images/Sections/Recipes/close.png";
-import "./RecipesNotFound.css";
 import { createPortal } from "react-dom";
 import { useState, useEffect, useRef } from "react";
+
+import errorImg from "../../../../Images/Sections/Recipes/close.png";
+import "./RecipesNotFound.css";
 
 export default function RecipesNotFound({ setNotFound }) {
   const [openModal, setOpenModal] = useState(true);
@@ -29,7 +30,7 @@ export default function RecipesNotFound({ setNotFound }) {
           ✖
         </button>
         <img
-          src={ErrorImg}
+          src={errorImg}
           alt="cookies-img"
           className="w-[50px] h-auto shadow-black shadow-md rounded-[50%]"
         />

@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
-import QuestionModal from "./InformationModal/InformationModal";
 import { motion } from "framer-motion";
+
+import QuestionModal from "./InformationModal/InformationModal";
 
 export default function QuestionButton({ text, extraClass }) {
   const [modalVisibility, setModalVisibility] = useState(false);
@@ -9,7 +10,6 @@ export default function QuestionButton({ text, extraClass }) {
 
   useEffect(() => {
     function handleClickOutside(event) {
-      // Check if the click is outside the modal and not on the button or icon
       if (
         !buttonRef.current.parentNode.contains(event.target) &&
         event.target !== buttonRef.current &&

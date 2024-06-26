@@ -10,20 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.19",
     "framer-motion": "^11.2.3",
-    "hamburger-react": "^2.5.1",
     "like-effects": "^1.0.8",
-    "locomotive-scroll": "^4.1.4",
     "nouislider": "^15.7.1",
-    "postcss": "^8.4.38",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^9.1.2",
     "react-select": "^5.8.0",
     "react-spinners": "^0.13.8",
-    "redux": "^5.0.1",
-    "seamless-scroll-polyfill": "^2.3.4"
+    "redux": "^5.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

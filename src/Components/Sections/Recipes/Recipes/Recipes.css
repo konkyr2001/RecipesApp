@@ -1,5 +1,4 @@
 #recipes-section {
-  /* background: linear-gradient(to right, rgb(214, 241, 243) 20%, #d2faf7 100%); */
   /* background-color: #71b8bd; */
   background-color: #a2b4ee;
 }
@@ -7,22 +6,4 @@
 .recipe-container {
   /* background-color: #f1e7cd; */
   background-color: #fcf6d4;
-}
-/* .recipes-container::-webkit-scrollbar-thumb {
-  background-color: rgb(43, 200, 228);
-  border: 4px solid transparent;
-  border-radius: 8px;
-  background-clip: padding-box;
-}
-
-.recipes-container::-webkit-scrollbar {
-  width: 20px;
-}
-
-.recipes-container::-webkit-scrollbar-track {
-  margin: 20px;
-} */
-.recipes-list {
-  grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
-  /* font-family: "Poppins", sans-serif; */
 }

@@ -4,6 +4,8 @@ import foodImg from "../../../../Images/Sections/Details/ingredients.svg";
 import recipesImg from "../../../../Images/Sections/Details/recipes2.png";
 import likeImg from "../../../../Images/Sections/Details/save.svg";
 
+import "./WebsiteDetails.css";
+
 export default function WebsiteDetails() {
   return (
     <div

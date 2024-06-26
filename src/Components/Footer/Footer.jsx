@@ -1,6 +1,6 @@
-import "./Footer.css";
-
 import { motion } from "framer-motion";
+
+import "./Footer.css";
 
 export default function Footer() {
   return (

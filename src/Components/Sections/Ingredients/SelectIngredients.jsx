@@ -11,7 +11,6 @@ const customStyles = {
     width: 400,
   }),
   menu: (base) => ({
-    // override border radius to match the bo
     ...base,
     marginTop: 0,
     borderRadius: 10,
@@ -24,28 +23,27 @@ const customStyles = {
     "::-webkit-scrollbar": {
       width: "10px",
       margin: "20px",
-      padding: "10px"
+      padding: "10px",
     },
     "::-webkit-scrollbar-track": {
       display: "none",
       background: "#f1f1f1",
     },
     "::-webkit-scrollbar-button": {
-      height: "5px"
+      height: "5px",
     },
     "::-webkit-scrollbar-thumb": {
       background: "#888",
       borderRadius: "20px",
     },
     "::-webkit-scrollbar-thumb:hover": {
-      background: "#6d6d6d"
-    }
+      background: "#6d6d6d",
+    },
   }),
   option: (styles) => {
     return {
       ...styles,
       backgroundColor: "white",
-      // cursor: "pointer",
       color: "black",
       ":hover": {
         backgroundColor: "gray",
@@ -84,7 +82,6 @@ export default function SelectIngredients({
   selectedIngredients,
   setSelectedIngredients,
 }) {
-  // const [selectIngredients, setSelectIngredients] = useState([]);
   const [selectCurrentInput, setSelectCurrentInput] = useState("");
 
   function handleKeyDown(event) {

@@ -248,4 +248,3 @@ const foods = [
 
 const size = foods.length;
 export { foods, size };
-// lemmon, fish, shrimp, bacon,

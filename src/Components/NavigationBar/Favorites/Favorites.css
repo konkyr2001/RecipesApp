@@ -2,7 +2,6 @@
   width: 10px;
 }
 
-/* Track */
 .favorites-box::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px rgb(94, 94, 94);
   border-radius: 10px;
@@ -11,7 +10,6 @@
   margin: 10px;
 }
 
-/* Handle */
 .favorites-box::-webkit-scrollbar-thumb {
   background: rgb(233, 135, 135);
   background-clip: padding-box;
@@ -20,13 +18,12 @@
   width: 20px;
 }
 
-/* Handle on hover */
 .favorites-box::-webkit-scrollbar-thumb:hover {
   background: rgb(223, 102, 102);
 }
 
 .favorites-box::-webkit-scrollbar-button {
-  display:none;
+  display: none;
   width: 0;
   height: 0;
 }

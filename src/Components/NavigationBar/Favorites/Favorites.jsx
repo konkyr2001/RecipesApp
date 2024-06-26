@@ -32,8 +32,7 @@ export default function Favorites() {
     setShowFavorites((prevState) => !prevState);
   }
 
-  function handleRemoveItem(event, title) {
-    // event.preventDefault();
+  function handleRemoveItem(title) {
     dispatch({
       type: "REMOVE_FAVORITE",
       payload: {
@@ -142,7 +141,7 @@ export default function Favorites() {
                     </li>
                     <li className="inline-block float-right">
                       <motion.button
-                        onClick={(e) => handleRemoveItem(e, favorite.title)}
+                        onClick={(e) => handleRemoveItem(favorite.title)}
                         className="p-0 m-0"
                         whileHover={{ scale: 1.2 }}
                         whileTap={{ scale: 0.8 }}

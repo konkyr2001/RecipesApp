@@ -1,4 +1,3 @@
-/* RandomFood.css */
 .switch {
   width: 60px;
   height: 30px;
@@ -29,7 +28,7 @@
 }
 
 .switch[data-ison="true"] .handle {
-  left: 32.5px; /* Move the handle to the right when on */
+  left: 32.5px;
 }
 
 .light-dark-svg {
