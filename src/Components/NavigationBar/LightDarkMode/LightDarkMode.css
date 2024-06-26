@@ -57,3 +57,7 @@
 .switch[data-ison="false"] .light-dark-svg:nth-child(2) {
   opacity: 0;
 }
+
+.welcome-section-darkMode {
+  background: linear-gradient(to bottom, #1d7e7e 90%, #0f79a3 98%);
+}

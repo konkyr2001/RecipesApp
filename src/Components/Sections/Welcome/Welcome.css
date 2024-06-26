@@ -1,14 +1,5 @@
-#welcome-section {
-  background-color: #affafa;
+.welcome-section {
   background: linear-gradient(to bottom, #affafa 90%, #90e0ff 98%);
-}
-
-.welcome-section-background {
-  right: 0px;
-  transform: translateX(50%);
-  min-width: 70%;
-  height: 85%;
-  background: linear-gradient(to right, #7676c2 20%, #2abcda 85%);
 }
 
 .welcome-wave {

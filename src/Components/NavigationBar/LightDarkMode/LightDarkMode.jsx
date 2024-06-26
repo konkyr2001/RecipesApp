@@ -12,16 +12,28 @@ const spring = {
   damping: 30,
 };
 
-const welcomeSection = document.getElementById("welcome-section");
-const welcomeWave = document.getElementById("welcome-wave");
-const welcomeMixTitle = document.getElementById("welcome-mix-title");
 export default function LightDarkMode() {
-  const [isOn, setIsOn] = useState(false);
+  const [isOn, setIsOn] = useState(localStorage.getItem("darkMode") === "true");
 
   const toggleSwitch = () => setIsOn(!isOn);
 
   useEffect(() => {
-    console.log(isOn);
+    const welcomeSection = document.getElementById("welcome-section");
+    const welcomeWave = document.getElementById("welcome-wave");
+    const welcomeMixTitle = document.getElementById("welcome-mix-title");
+    if (isOn) {
+      localStorage.setItem("darkMode", true);
+      welcomeSection.classList.remove("welcome-section");
+      welcomeSection.classList.add("welcome-section-darkMode");
+      // welcomeWave.classList.remove("welcome-wave");
+      // welcomeWave.classList.add("welcome-wave-darkMode");
+    } else {
+      localStorage.setItem("darkMode", false);
+      welcomeSection.classList.add("welcome-section");
+      welcomeSection.classList.remove("welcome-section-darkMode");
+      // welcomeWave.classList.add("welcome-wave");
+      // welcomeWave.classList.remove("welcome-wave-darkMode");
+    }
   }, [isOn]);
 
   return (

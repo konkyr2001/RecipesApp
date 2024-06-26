@@ -6,7 +6,7 @@ export default function Welcome() {
   return (
     <div
       id="welcome-section"
-      className="w-full h-[100vh] flex justify-center items-center relative"
+      className="welcome-section w-full h-[100vh] flex justify-center items-center relative"
     >
       <div className="welcome-wave">
         <svg
