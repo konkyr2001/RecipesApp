@@ -6,7 +6,7 @@ export default function Welcome() {
   return (
     <div
       id="welcome-section"
-      className="welcome-section w-full h-[100vh] flex justify-center items-center relative"
+      className="welcome-section-lightMode w-full h-[100vh] flex justify-center items-center relative"
     >
       <div className="welcome-wave">
         <svg
@@ -20,10 +20,15 @@ export default function Welcome() {
               <stop offset="20%" stopColor="#9ea3e7" />
               <stop offset="80%" stopColor="#7a80d6" />
             </linearGradient>
+            <linearGradient id="gradient-Dark">
+              <stop offset="20%" stopColor="#4C3BCF" />
+              <stop offset="80%" stopColor="#402E7A" />
+            </linearGradient>
           </defs>
           <path
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
             className="shape-fill"
+            id="welcome-wave-fill"
             fill="url(#gradient)"
           ></path>
         </svg>
@@ -48,7 +53,7 @@ export default function Welcome() {
             </span>
           </p>
           <a
-            className="rounded-[20px] text-lg py-2 px-4 bg-green-400 shadow-md cursor-pointer hover:bg-green-500 hover:shadow-lg duration-200"
+            className="rounded-[20px] text-lg py-2 px-4 font-semibold bg-green-400 shadow-md cursor-pointer hover:bg-green-500 hover:shadow-lg duration-200"
             href="#ingredients-section"
           >
             <p className="inline-block">Find your recipe</p>

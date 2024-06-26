@@ -4,7 +4,10 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <div className="footer w-full h-[300px] relative text-white font-Poppins font-light">
+    <div
+      className="footer-lightMode w-full h-[300px] relative text-white font-Poppins font-light"
+      id="footer"
+    >
       <div className="waves">
         <div className="wave" id="wave1"></div>
         <div className="wave" id="wave2"></div>

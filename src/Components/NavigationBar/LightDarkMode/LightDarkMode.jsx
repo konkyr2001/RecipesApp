@@ -19,20 +19,47 @@ export default function LightDarkMode() {
 
   useEffect(() => {
     const welcomeSection = document.getElementById("welcome-section");
-    const welcomeWave = document.getElementById("welcome-wave");
-    const welcomeMixTitle = document.getElementById("welcome-mix-title");
+    const welcomeWave = document.getElementById("welcome-wave-fill");
+    const detailsSection = document.getElementById("website-details-section");
+    const ingredientSection = document.getElementById("ingredients-section");
+    const recipeSection = document.getElementById("recipes-section");
+    const footer = document.getElementById("footer");
     if (isOn) {
       localStorage.setItem("darkMode", true);
-      welcomeSection.classList.remove("welcome-section");
+      welcomeSection.classList.remove("welcome-section-lightMode");
       welcomeSection.classList.add("welcome-section-darkMode");
-      // welcomeWave.classList.remove("welcome-wave");
-      // welcomeWave.classList.add("welcome-wave-darkMode");
+
+      welcomeWave.style.fill = "url(#gradient-Dark)";
+
+      detailsSection.classList.remove("website-details-section-lightMode");
+      detailsSection.classList.add("website-details-section-darkMode");
+
+      ingredientSection.classList.remove("ingredients-section-lightMode");
+      ingredientSection.classList.add("ingredients-section-darkMode");
+
+      footer.classList.remove("footer-lightMode");
+      footer.classList.add("footer-darkMode");
+
+      recipeSection.classList.remove("recipes-section-lightMode");
+      recipeSection.classList.add("recipes-section-darkMode");
     } else {
       localStorage.setItem("darkMode", false);
-      welcomeSection.classList.add("welcome-section");
+      welcomeSection.classList.add("welcome-section-lightMode");
       welcomeSection.classList.remove("welcome-section-darkMode");
-      // welcomeWave.classList.add("welcome-wave");
-      // welcomeWave.classList.remove("welcome-wave-darkMode");
+
+      welcomeWave.style.fill = "url(#gradient)";
+
+      detailsSection.classList.add("website-details-section-lightMode");
+      detailsSection.classList.remove("website-details-section-darkMode");
+
+      ingredientSection.classList.add("ingredients-section-lightMode");
+      ingredientSection.classList.remove("ingredients-section-darkMode");
+
+      footer.classList.add("footer-lightMode");
+      footer.classList.remove("footer-darkMode");
+
+      recipeSection.classList.add("recipes-section-lightMode");
+      recipeSection.classList.remove("recipes-section-darkMode");
     }
   }, [isOn]);
 

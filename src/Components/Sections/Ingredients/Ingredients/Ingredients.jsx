@@ -117,11 +117,11 @@ export default function SearchIngredients() {
 
   return (
     <div
-      className="search-ingredients section w-full h-[100vh] flex justify-center items-center relative text-white"
+      className="ingredients-section-lightMode font-Montserrat section w-full h-[100vh] flex justify-center items-center relative text-white"
       id="ingredients-section"
     >
       <div
-        className="absolute w-full h-[100vh] bg-cover bg-bottom top-0 left-0 block"
+        className="ingredients-img absolute w-full h-[100vh] bg-cover bg-bottom top-0 left-0 block"
         style={{
           backgroundImage: `url(${backgroundImg})`,
         }}

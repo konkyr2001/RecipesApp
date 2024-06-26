@@ -118,7 +118,7 @@ export default function Recipes() {
 
   return (
     <div
-      className="section w-full recipes-container pb-14 relative"
+      className="recipes-section-lightMode section w-full recipes-container pb-14 relative"
       id="recipes-section"
     >
       {notFound && (

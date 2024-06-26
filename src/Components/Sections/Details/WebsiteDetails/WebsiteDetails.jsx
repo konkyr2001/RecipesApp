@@ -10,10 +10,10 @@ export default function WebsiteDetails() {
   return (
     <div
       id="website-details-section"
-      className="relative w-[full] h-[100vh] flex justify-center items-center"
+      className="website-details-section-lightMode relative w-[full] h-[100vh] flex justify-center items-center"
     >
       <ul className="w-full flex justify-center items-center gap-5">
-        <li className="w-[300px] h-[400px]">
+        <li className="w-1/5 h-[400px]">
           <DetailsContainer
             image={nutritionImg}
             title={"Macros"}
