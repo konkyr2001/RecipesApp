@@ -1,4 +1,4 @@
-import homepageImg from "./img/homepageImage.jpg";
+import homepageImg from "./img/Welcome-Section/homepage.jpg";
 import "./Welcome.css";
 
 export default function Welcome() {
@@ -7,7 +7,7 @@ export default function Welcome() {
       id="welcome-section"
       className="w-full h-[100vh] flex justify-center items-center relative"
     >
-      <div className="custom-shape-divider-top-1718532315">
+      <div className="welcome-wave">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@ export default function Welcome() {
           <h1 className="text-4xl font-semibold font-Montserrat">
             Find the recipes <br></br> that suits best for you!
           </h1>
-          <h1 className="mix-title text-4xl font-Montserrat">
+          <h1 className="mix-title text-4xl font-Montserrat" id="welcome-mix-title">
             Taste the Joy of Cooking!
           </h1>
           <p className="text-lg text-slate-500 font-Montserrat mt-10 tracking-tight mb-7">
@@ -56,15 +56,6 @@ export default function Welcome() {
             src={homepageImg}
             alt="HomePage image"
             className="cursorPointer rounded-xl bg-cover opacity-90 max-h-[500px] cursor-default"
-            initial="hidden"
-            whileInView="visible"
-            exit={{ opacity: 0, x: 300 }}
-            viewport={{ once: true }}
-            transition={{ duration: 2, delay: 2 }}
-            variants={{
-              visible: { opacity: 1, x: 0 },
-              hidden: { opacity: 0, x: 300 },
-            }}
           />
         </div>
       </div>

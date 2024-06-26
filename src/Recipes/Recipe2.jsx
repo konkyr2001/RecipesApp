@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import "like-effects";
 
 import QuestionModal from "../New/QuestionModal";
-import IngredientsImg from "../img/ingredients.png";
+import IngredientsImg from "../img/Icons/ingredientsAmount.png";
 export default function Recipe({
   title,
   imgUrl,

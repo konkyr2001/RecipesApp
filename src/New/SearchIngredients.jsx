@@ -1,5 +1,5 @@
 import "./SearchIngredients.css";
-import img from "../img/ingredientsBackgroundImage.jpg";
+import img from "../img/Ingredients-Section/background.jpg";
 import SelectIngredients from "./SelectIngredients";
 import QuestionModal from "./QuestionModal";
 import QuestionButton from "./QuestionButton";

@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import "./Favorites.css";
-import IngredientsImg from "./img/ingredients.png";
+import IngredientsImg from "./img/Icons/ingredientsAmount.png";
 
 export default function Favorites() {
   const favorites = useSelector((state) => state.favoriteStore.favoriteRecipes);

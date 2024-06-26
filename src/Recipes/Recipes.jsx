@@ -73,7 +73,7 @@ export default function Recipes() {
 
         let response;
         try {
-          console.log(link);
+          // console.log(link);
           response = await fetch(link);
         } catch (error) {
           console.log(`Error with link: ${link}`);

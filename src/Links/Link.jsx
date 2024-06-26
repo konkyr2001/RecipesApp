@@ -12,9 +12,6 @@ export default function Link({
         behavior: "smooth",
         block: "start",
       },
-      {
-        // duration: 5000, // aprox. the duration that chrome uses,
-      }
     );
   }
 

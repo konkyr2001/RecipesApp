@@ -1,8 +1,8 @@
 import DetailsContainer from "./DetailsContainer";
-import nutritionImg from "./img/schedule.png";
-import foodImg from "./img/ingredients-svgrepo-com.svg";
-import recipesImg from "./img/biryani.png";
-import likeImg from "./img/heart-svgrepo-com.svg";
+import nutritionImg from "./img/Details-Section/macros.png";
+import foodImg from "./img/Details-Section/ingredients.svg";
+import recipesImg from "./img/Details-Section/recipes2.png";
+import likeImg from "./img/Details-Section/save.svg";
 
 import "./WebsiteDetails.css";
 export default function WebsiteDetails() {

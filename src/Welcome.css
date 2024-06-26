@@ -13,7 +13,7 @@
   background: linear-gradient(to right, #7676c2 20%, #2abcda 85%);
 }
 
-.custom-shape-divider-top-1718532315 {
+.welcome-wave {
   position: absolute;
   top: 0;
   left: 0;
@@ -22,14 +22,14 @@
   line-height: 0;
 }
 
-.custom-shape-divider-top-1718532315 svg {
+.welcome-wave svg {
   position: relative;
   display: block;
   width: calc(100% + 20px);
   height: 23vh;
 }
 
-.custom-shape-divider-top-1718532315 .shape-fill {
+.welcome-wave .shape-fill {
   /* fill: #c2c5f5; */
   /* background: linear-gradient(#e66465, #29a3bb); */
 }
@@ -37,8 +37,6 @@
   /* color: linear-gradient(90, #020024 0%, #090979 28%, #0d9cb9 100%); */
   background: linear-gradient(to right, #6c6cee 20%, #1bc8eb 70%);
   font-weight: 600;
-  /* background: linear-gradient(to right, #f32170,
-  #ff6b08, #cf23cf, #eedd44); */
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }

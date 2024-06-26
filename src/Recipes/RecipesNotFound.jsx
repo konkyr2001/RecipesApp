@@ -1,4 +1,4 @@
-import ErrorImg from "../img/close.png";
+import ErrorImg from "../img/Recipes-Section/close.png";
 import "./RecipesNotFound.css";
 import { createPortal } from "react-dom";
 import { useState, useEffect, useRef } from "react";

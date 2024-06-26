@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "./LightDarkMode.css";
-import lightSvg from "./img/brightness-high.svg";
-import darkSvg from "./img/moon-stars.svg";
+import lightSvg from "./img/Header/lightMode.svg";
+import darkSvg from "./img/Header/darkMode.svg";
 
 const spring = {
   type: "spring",
@@ -10,6 +10,9 @@ const spring = {
   damping: 30,
 };
 
+const welcomeSection = document.getElementById("welcome-section");
+const welcomeWave = document.getElementById("welcome-wave");
+const welcomeMixTitle = document.getElementById("welcome-mix-title");
 export default function LightDarkMode() {
   const [isOn, setIsOn] = useState(false);
 

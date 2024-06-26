@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 export default function Footer() {
   return (
     <div className="footer w-full h-[300px] relative text-white font-Poppins font-light">
-      <div class="waves">
-        <div class="wave" id="wave1"></div>
-        <div class="wave" id="wave2"></div>
-        <div class="wave" id="wave3"></div>
-        <div class="wave" id="wave4"></div>
+      <div className="waves">
+        <div className="wave" id="wave1"></div>
+        <div className="wave" id="wave2"></div>
+        <div className="wave" id="wave3"></div>
+        <div className="wave" id="wave4"></div>
       </div>
       <ul className="flex justify-center items-center h-full flex-col pt-0">
         <li className="block m-3">
