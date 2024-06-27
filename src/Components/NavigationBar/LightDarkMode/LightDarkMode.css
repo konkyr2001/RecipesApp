@@ -101,7 +101,7 @@
 }
 
 .welcome-section-darkMode img {
-  filter: brightness(75%);
+  filter: brightness(85%);
 }
 
 /*
@@ -119,15 +119,17 @@
 }
 
 .website-details-section-darkMode .details h3 {
-  color: black;
+  color: white;
 }
 
 .website-details-section-darkMode .details img {
   filter: brightness(85%);
+  outline-color: rgb(38, 54, 197);
+  background-color: rgb(105, 139, 248);
 }
 
 .website-details-section-darkMode .details p {
-  color: rgb(0, 0, 0);
+  color: rgb(226, 216, 216);
 }
 
 /*
@@ -158,14 +160,47 @@
   /* background-color: #a2b4ee; */
 }
 
+.recipes-section-darkMode .recipes-header {
+  color: rgb(203, 209, 214);
+}
+
 .recipes-section-darkMode .recipe-container {
   /* background-color: #f1e7cd; */
   background-color: #576CBC;
+  border-color: rgb(203, 213, 225);
+}
+
+.recipes-section-darkMode .recipes-header .sorting-menu ul {
+  background-color: #576CBC;
+}
+.recipes-section-darkMode .recipe-container .sorting-menu .sorting-link {
+  color: red;
+  background-color: red;
 }
 
 .recipes-section-darkMode img {
   filter: brightness(80%);
+}
 
+.recipes-section-darkMode img:hover {
+  filter: brightness(100%);
+}
+
+.recipes-section-darkMode p {
+  color: rgb(241, 235, 235);
+}
+
+.recipes-section-darkMode label {
+  color: rgb(238, 232, 232);
+}
+
+.recipes-section-darkMode ul:nth-of-type(2) li {
+  background-color: rgb(66, 64, 185);
+  color: rgb(238, 230, 230);
+}
+
+.recipes-section-darkMode a {
+  background-color: #074db6e8;
 }
 
 .footer-darkMode {

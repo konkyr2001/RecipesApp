@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import SelectIngredients from "../SelectIngredients";
-import QuestionButton from "../../../InformationButton/InformationButton";
+import InformationButton from "../../../InformationButton/InformationButton";
 
 import "./Ingredients.css";
 
@@ -140,7 +140,7 @@ export default function SearchIngredients() {
             className="inline-block w-[400px] m-0"
             ref={sliderRef}
           ></div>
-          <QuestionButton
+          <InformationButton
             text="Adjust the calories per serving of your recipes to be around the calories you will give as min and max value."
             extraClass="right-5"
           />
@@ -163,7 +163,7 @@ export default function SearchIngredients() {
             min="0"
             max="100"
           />
-          <QuestionButton
+          <InformationButton
             extraClass="ml-5"
             text="Adjust the minimum amount of protein per serving that your recipes will contain."
           />
@@ -174,7 +174,7 @@ export default function SearchIngredients() {
               selectedIngredients={ingredients}
               setSelectedIngredients={setIngredients}
             />
-            <QuestionButton
+            <InformationButton
               text="Add the ingredients that your recipes will include"
               extraClass="ml-5"
             />
@@ -189,7 +189,7 @@ export default function SearchIngredients() {
             <label className="ml-[5px]" htmlFor="only-ingredients-checkbox">
               I have only this ingredients
             </label>
-            <QuestionButton
+            <InformationButton
               text="Check the checkbox if you only want recipes with the ingredients you just added."
               extraClass="ml-5 mt-[3px]"
             />

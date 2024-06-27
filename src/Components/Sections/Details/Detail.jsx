@@ -23,7 +23,7 @@ export default function Detail({ image, title, description, from, to }) {
   }, [from, to]);
 
   return (
-    <div className="details rounded-lg font-Montserrat flex flex-col justify-center items-center h-full pt-[35px]">
+    <div className="details rounded-xl font-Montserrat flex flex-col justify-center items-center h-full pt-[35px]">
       <div className="w-full flex justify-center items-center h-1/3">
         <img
           width="110"

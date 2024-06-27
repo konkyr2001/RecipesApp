@@ -158,8 +158,7 @@ export default function Recipe({
       </ul>
       <ul className="flex mb-4 w-auto flex-wrap justify-center gap-y-2">
         <li
-          className={`rounded-[30px] bg-slate-300 text-black px-3 py-1
-          ${dietLabels.length > 0 ? "mr-4" : ""}
+          className={`rounded-[30px] bg-slate-300 text-black px-3 py-1 ${dietLabels.length > 0 ? "mr-4" : ""}
           `}
         >
           {mealType}

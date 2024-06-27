@@ -135,7 +135,7 @@ export default function Recipes() {
       {data.hits.length > 0 && (
         <>
           <RecipesHeader
-            className="mt-7 mb-0 mr-12 float-right"
+            className="recipes-header mt-7 mb-0 mr-12 float-right"
             handleRefresh={handleRefresh}
             setSortValue={setSortValue}
             setSortBy={setSortBy}
