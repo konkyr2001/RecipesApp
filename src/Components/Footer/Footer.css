@@ -22,7 +22,9 @@
   background: url("../../Images/Footer/wave-dark.png");
   background-size: 1000px 100px;
 }
-
+.footer-darkMode {
+  background-color: #0962e8;
+}
 .waves #wave1 {
   z-index: 1000;
   opacity: 1;

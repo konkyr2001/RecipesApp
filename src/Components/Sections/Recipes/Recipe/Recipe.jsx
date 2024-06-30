@@ -3,15 +3,15 @@ import { useSelector, useDispatch } from "react-redux";
 import { motion } from "framer-motion";
 import "like-effects";
 
+import "./css/RecipeDark.css";
+import "./css/RecipeLight.css";
+
 import IngredientsImg from "../../../../Images/Icons/ingredientsAmount.png";
 export default function Recipe({
   title,
   imgUrl,
-  time,
-  servings,
   calories,
   protein,
-  carbs,
   url,
   ingredients,
   idLink,
@@ -29,7 +29,7 @@ export default function Recipe({
     color: "black",
   };
   if (Math.round((protein / calories) * 100) > 9 && protein > 0) {
-    proteinColorStyle.color = "green";
+    proteinColorStyle.color = "#24BD67";
   } else if (Math.round((protein / calories) * 100) > 3 && protein > 0) {
     proteinColorStyle.color = "orange";
   }
@@ -158,7 +158,9 @@ export default function Recipe({
       </ul>
       <ul className="flex mb-4 w-auto flex-wrap justify-center gap-y-2">
         <li
-          className={`rounded-[30px] bg-slate-300 text-black px-3 py-1 ${dietLabels.length > 0 ? "mr-4" : ""}
+          className={`rounded-[30px] bg-slate-300 text-black px-3 py-1 ${
+            dietLabels.length > 0 ? "mr-4" : ""
+          }
           `}
         >
           {mealType}

@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
-import "./Favorites.css";
+import "./css/FavoritesLight.css";
+import "./css/FavoritesDark.css";
 import ingredientsImg from "../../../Images/Icons/ingredientsAmount.png";
 
 export default function Favorites() {
@@ -43,7 +44,8 @@ export default function Favorites() {
 
   return (
     <div
-      className="relative z-20"
+      className="favorites-lightMode relative z-20"
+      id="favorites"
       style={{
         fontFamily: "Quicksand, sans-serif",
         userSelect: "none",
@@ -74,7 +76,7 @@ export default function Favorites() {
           closed: { scale: 0, opacity: 0 },
         }}
         animate={showFavorites ? "open" : "closed"}
-        className="absolute bg-slate-100 rounded-[20px] min-w-[200px] w-auto max-w-[400px] mt-10 z-20 px-1 -right-20  max-h-[470px]"
+        className="favorites-container absolute bg-slate-100 rounded-[20px] min-w-[200px] w-auto max-w-[400px] mt-10 z-20 px-1 -right-20  max-h-[470px]"
         ref={modalRef}
       >
         <div className="triangle bg-transparent border-b-slate-100 absolute right-[78px] -top-8 border-[17px] after:border-none"></div>
@@ -92,7 +94,7 @@ export default function Favorites() {
                 <a
                   href={favorite.url}
                   target="_blank"
-                  className="min-w-[100px] h-[100px] rounded-md overflow-hidden hover:opacity-75 duration-300 ease-in-out cursor-pointer"
+                  className="min-w-[100px] h-[100px] rounded-md overflow-hidden hover:opacity-95 duration-300 ease-in-out cursor-pointer"
                 >
                   <img
                     alt="Recipe image"

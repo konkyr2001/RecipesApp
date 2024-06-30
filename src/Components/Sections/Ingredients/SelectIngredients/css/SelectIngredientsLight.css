@@ -1,0 +1,47 @@
+.ingredients-section-lightMode .css-1xc3v61-indicatorContainer {
+  color: red;
+}
+
+.ingredients-section-lightMode .css-1xc3v61-indicatorContainer > svg {
+  color: rgb(107, 103, 121);
+  transition: 150ms ease-in-out all;
+  cursor: pointer;
+}
+
+.ingredients-section-lightMode .css-1qrcmxz-MultiValueRemove {
+  transition: 150ms all ease-in-out;
+}
+
+.ingredients-section-lightMode .css-1qrcmxz-MultiValueRemove:hover {
+  background-color: rgb(218, 50, 50);
+}
+
+.ingredients-section-lightMode
+  .css-1xc3v61-indicatorContainer:nth-of-type(1)
+  > svg:hover {
+  color: rgb(218, 50, 50);
+}
+
+.ingredients-section-lightMode
+  .css-1xc3v61-indicatorContainer:nth-of-type(2)
+  > svg:hover {
+  color: rgb(68, 0, 255);
+}
+
+.ingredients-section-lightMode .css-15lsz6c-indicatorContainer svg {
+  cursor: pointer;
+  transition: 150ms ease-in-out all;
+  color: rgb(107, 103, 121);
+}
+
+.ingredients-section-lightMode
+  .css-15lsz6c-indicatorContainer:nth-of-type(1)
+  svg:hover {
+  color: rgb(218, 50, 50);
+}
+
+.ingredients-section-lightMode
+  .css-15lsz6c-indicatorContainer:nth-of-type(2)
+  svg:hover {
+  color: rgb(68, 0, 255);
+}

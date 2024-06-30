@@ -1,0 +1,24 @@
+.recipes-section-darkMode .recipes-header .sorting-menu {
+  color: white;
+}
+
+.recipes-section-darkMode .recipes-header .sorting-menu ul {
+  background-color: #3836ac;
+}
+
+.recipes-section-darkMode .recipes-header .sorting-menu ul a {
+  background-color: #3836ac;
+}
+
+.recipes-section-darkMode .sorting-menu .sorting-link::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: rgb(255, 255, 255);
+  transition: 300ms;
+}
+
+.recipes-section-darkMode .sorting-link:hover::after {
+  width: 100%;
+}

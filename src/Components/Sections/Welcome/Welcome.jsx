@@ -1,6 +1,7 @@
 import homePageImg from "../../../Images/Sections/Welcome/homepage.jpg";
 
-import "./Welcome.css";
+import "./css/WelcomeDark.css";
+import "./css/WelcomeLight.css";
 
 export default function Welcome() {
   return (

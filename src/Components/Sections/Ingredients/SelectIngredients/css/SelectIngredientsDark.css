@@ -1,0 +1,103 @@
+.ingredients-section-darkMode .search-ingredients {
+  color: white;
+}
+
+.ingredients-section-darkMode .css-1jqq78o-placeholder,
+.css-tj5bde-Svg {
+  color: white;
+}
+
+.ingredients-section-darkMode .css-lspg7t-control {
+  transition: 150ms all ease-in-out;
+  background-color: rgb(22, 19, 177);
+}
+
+.ingredients-section-darkMode .css-lspg7t-control:hover {
+  background-color: rgb(22, 19, 177);
+}
+
+.ingredients-section-darkMode .css-1hr3ol2-MultiValueGeneric2 {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: rgb(148, 60, 248);
+}
+
+.ingredients-section-darkMode .css-1xc3v61-indicatorContainer svg {
+  cursor: pointer;
+  transition: 150ms ease-in-out all;
+}
+
+.ingredients-section-darkMode
+  .css-1xc3v61-indicatorContainer:nth-of-type(1)
+  svg:hover {
+  color: rgb(218, 50, 50);
+}
+
+.ingredients-section-darkMode
+  .css-1xc3v61-indicatorContainer:nth-of-type(2)
+  svg:hover {
+  color: rgb(180, 175, 175);
+}
+
+.ingredients-section-darkMode .css-1qrcmxz-MultiValueRemove {
+  transition: 150ms all ease-in-out;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: rgb(148, 60, 248);
+}
+
+.ingredients-section-darkMode .css-1qrcmxz-MultiValueRemove:hover {
+  background-color: rgb(218, 50, 50);
+}
+
+.ingredients-section-darkMode .css-15lsz6c-indicatorContainer svg {
+  cursor: pointer;
+  transition: 150ms ease-in-out all;
+  color: white;
+}
+
+.ingredients-section-darkMode
+  .css-15lsz6c-indicatorContainer:nth-of-type(1)
+  svg:hover {
+  color: rgb(218, 50, 50);
+}
+
+.ingredients-section-darkMode
+  .css-15lsz6c-indicatorContainer:nth-of-type(2)
+  svg:hover {
+  color: rgb(180, 175, 175);
+}
+
+.ingredients-section-darkMode .css-u8j94p-menu div {
+  transition: 150ms all ease-in-out;
+  background-color: rgb(30, 70, 122);
+  color: white;
+}
+
+.ingredients-section-darkMode .css-u8j94p-menu > div > div:hover {
+  background-color: rgb(10, 103, 224);
+  color: white;
+}
+
+.ingredients-section-darkMode .css-u8j94p-menu div {
+  transition: 150ms all ease-in-out;
+  background-color: rgb(30, 70, 122);
+  color: white;
+}
+
+.ingredients-section-darkMode .css-u8j94p-menu div::-webkit-scrollbar {
+  background-color: rgb(65, 91, 177);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.ingredients-section-darkMode .css-u8j94p-menu div::-webkit-scrollbar-thumb {
+  background-color: rgb(108, 169, 248);
+  transition: 150ms all ease-in-out;
+}
+
+.ingredients-section-darkMode
+  .css-u8j94p-menu
+  div::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(2, 54, 121);
+}

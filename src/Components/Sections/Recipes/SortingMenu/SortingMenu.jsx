@@ -1,7 +1,8 @@
 import { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
 
-import "./SortingMenu.css";
+import "./css/SortingMenuLight.css";
+import "./css/SortingMenuDark.css";
 
 const itemVariants = {
   open: {

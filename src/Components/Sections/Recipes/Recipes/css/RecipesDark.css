@@ -1,0 +1,9 @@
+.recipes-section-darkMode {
+  /* background-color: #71b8bd; */
+  background-color: #11376d;
+  /* background-color: #a2b4ee; */
+}
+
+.recipes-section-darkMode .recipes-header {
+  color: rgb(203, 209, 214);
+}

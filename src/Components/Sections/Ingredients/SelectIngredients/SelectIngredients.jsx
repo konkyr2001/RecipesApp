@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import Select from "react-select";
-import ingredients from "./ingredientsArray";
+import ingredients from "../ingredientsArray";
+
+import "./css/SelectIngredientsDark.css";
+import "./css/SelectIngredientsLight.css";
 
 const customStyles = {
   control: (base, state) => ({
@@ -24,6 +27,8 @@ const customStyles = {
       width: "10px",
       margin: "20px",
       padding: "10px",
+      backgroundColor: "#BAC6DA",
+      borderRadius: "0px 20px 20px 0px",
     },
     "::-webkit-scrollbar-track": {
       display: "none",
@@ -33,11 +38,11 @@ const customStyles = {
       height: "5px",
     },
     "::-webkit-scrollbar-thumb": {
-      background: "#888",
+      background: "#5C68FB",
       borderRadius: "20px",
     },
     "::-webkit-scrollbar-thumb:hover": {
-      background: "#6d6d6d",
+      background: "#4855F3",
     },
   }),
   option: (styles) => {
@@ -46,7 +51,7 @@ const customStyles = {
       backgroundColor: "white",
       color: "black",
       ":hover": {
-        backgroundColor: "gray",
+        backgroundColor: "rgb(196, 194, 204)",
         color: "black",
       },
       ":active": {
@@ -113,7 +118,7 @@ export default function SelectIngredients({
       noOptionsMessage={({ inputValue }) =>
         inputValue ? "Press enter to add this ingredient" : "No options"
       }
-      className="select-ingredients font-Quicksand"
+      className="select-ingredients font-Quicksand transition-all"
       styles={customStyles}
       closeMenuOnSelect={false}
       inputValue={selectCurrentInput}

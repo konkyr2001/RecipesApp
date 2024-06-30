@@ -6,6 +6,9 @@ import WebsiteDetails from "./Components/Sections/Details/WebsiteDetails/Website
 import Links from "./Components/Links/Links";
 import Footer from "./Components/Footer/Footer";
 
+import "./scrollerCss/ScrollerDark.css";
+import "./scrollerCss/ScrollerLight.css";
+
 import { useSelector } from "react-redux";
 function App() {
   return (

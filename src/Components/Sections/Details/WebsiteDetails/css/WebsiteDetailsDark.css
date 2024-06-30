@@ -1,0 +1,21 @@
+.website-details-section-darkMode {
+  background-color: #293788;
+}
+
+.website-details-section-darkMode .details {
+  background-color: #516eec;
+}
+
+.website-details-section-darkMode .details h3 {
+  color: white;
+}
+
+.website-details-section-darkMode .details img {
+  filter: brightness(85%);
+  outline-color: rgb(38, 54, 197);
+  background-color: rgb(105, 139, 248);
+}
+
+.website-details-section-darkMode .details p {
+  color: rgb(226, 216, 216);
+}

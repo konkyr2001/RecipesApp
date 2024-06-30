@@ -28,7 +28,7 @@ export default function QuestionButton({ text, extraClass }) {
     <div className={`inline-block relative ${extraClass}`}>
       <motion.button
         id="question-button"
-        className="rounded-[50%] outline outline-2 outline-slate-300 w-4 h-4 flex justify-center items-center ml-2 p-[8px]"
+        className="rounded-[50%] outline outline-2 outline-slate-200 w-4 h-4 flex justify-center items-center ml-2 p-[8px]"
         onClick={() => setModalVisibility((prevState) => !prevState)}
         ref={buttonRef}
         whileHover={{ scale: 1.2 }}
@@ -36,7 +36,7 @@ export default function QuestionButton({ text, extraClass }) {
       >
         <i
           id="question-icon"
-          className="fa-solid fa-question text-[14px] text-slate-300"
+          className="fa-solid fa-question pt-[3px] text-[13px] text-slate-300"
           ref={iRef}
         ></i>
       </motion.button>

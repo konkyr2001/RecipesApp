@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-
 import "./LightDarkMode.css";
-
 import lightSvg from "../../../Images/Header/lightMode.svg";
 import darkSvg from "../../../Images/Header/darkMode.svg";
 
@@ -24,8 +22,11 @@ export default function LightDarkMode() {
     const ingredientSection = document.getElementById("ingredients-section");
     const recipeSection = document.getElementById("recipes-section");
     const footer = document.getElementById("footer");
+    const favorites = document.getElementById("favorites");
+
     if (isOn) {
       localStorage.setItem("darkMode", true);
+      document.body.classList.add("dark-mode");
       welcomeSection.classList.remove("welcome-section-lightMode");
       welcomeSection.classList.add("welcome-section-darkMode");
 
@@ -42,8 +43,12 @@ export default function LightDarkMode() {
 
       recipeSection.classList.remove("recipes-section-lightMode");
       recipeSection.classList.add("recipes-section-darkMode");
+
+      favorites.classList.remove("favorites-lightMode");
+      favorites.classList.add("favorites-darkMode");
     } else {
       localStorage.setItem("darkMode", false);
+      document.body.classList.remove("dark-mode");
       welcomeSection.classList.add("welcome-section-lightMode");
       welcomeSection.classList.remove("welcome-section-darkMode");
 
@@ -60,6 +65,9 @@ export default function LightDarkMode() {
 
       recipeSection.classList.add("recipes-section-lightMode");
       recipeSection.classList.remove("recipes-section-darkMode");
+
+      favorites.classList.add("favorites-lightMode");
+      favorites.classList.remove("favorites-darkMode");
     }
   }, [isOn]);
 

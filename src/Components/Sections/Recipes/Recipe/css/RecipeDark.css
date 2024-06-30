@@ -1,0 +1,30 @@
+.recipes-section-darkMode .recipe-container {
+  /* background-color: #f1e7cd; */
+  background-color: #576cbc;
+  border-color: rgb(203, 213, 225);
+}
+
+.recipes-section-darkMode .recipe-container img {
+  filter: brightness(80%);
+}
+
+.recipes-section-darkMode .recipe-container img:hover {
+  filter: brightness(100%);
+}
+
+.recipes-section-darkMode .recipe-container p {
+  color: rgb(241, 235, 235);
+}
+
+.recipes-section-darkMode .recipe-container label {
+  color: rgb(238, 232, 232);
+}
+
+.recipes-section-darkMode .recipe-container ul:nth-of-type(2) li {
+  background-color: rgb(66, 64, 185);
+  color: rgb(238, 230, 230);
+}
+
+.recipes-section-darkMode .recipe-container a {
+  background-color: #074db6e8;
+}

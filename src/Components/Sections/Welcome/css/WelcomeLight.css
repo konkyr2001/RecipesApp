@@ -1,0 +1,39 @@
+.welcome-section-darkMode {
+  background: linear-gradient(to bottom, #4b70f5 90%, #293788 98%);
+}
+
+.welcome-section-darkMode h1 {
+  color: rgb(233, 222, 222);
+}
+
+.welcome-section-darkMode .mix-title {
+  background: linear-gradient(to right, #64ec64 20%, #59f3c0 70%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.welcome-section-darkMode p {
+  color: rgb(226, 213, 213);
+}
+
+.welcome-section-darkMode a {
+  background-color: #6048e7;
+  color: white;
+  font-weight: 600;
+}
+
+.welcome-section-darkMode span {
+  color: #000000;
+}
+
+.welcome-section-darkMode a i {
+  color: rgb(255, 255, 255);
+}
+
+.welcome-section-darkMode a:hover {
+  background-color: #523cce;
+}
+
+.welcome-section-darkMode img {
+  filter: brightness(85%);
+}

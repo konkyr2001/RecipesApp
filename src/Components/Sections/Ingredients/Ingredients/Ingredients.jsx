@@ -3,10 +3,11 @@ import "nouislider/dist/nouislider.css";
 import { useState, useRef, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-import SelectIngredients from "../SelectIngredients";
+import SelectIngredients from "../SelectIngredients/SelectIngredients";
 import InformationButton from "../../../InformationButton/InformationButton";
 
-import "./Ingredients.css";
+import "./css/IngredientsLight.css";
+import "./css/IngredientsDark.css";
 
 import backgroundImg from "../../../../Images/Sections/Ingredients/background.jpg";
 

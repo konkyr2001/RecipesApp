@@ -25,6 +25,7 @@
 #slider .noUi-tooltip {
   transform: translate(-50%, 200%);
   background-color: rgb(127, 175, 214);
+  background-color: rgb(173, 181, 187);
   border-radius: 10px;
   color: white;
 }

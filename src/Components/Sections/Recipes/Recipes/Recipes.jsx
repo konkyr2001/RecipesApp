@@ -6,7 +6,8 @@ import RecipesHeader from "../RecipesHeader";
 import Loading from "../Loading";
 import RecipesNotFound from "../RecipesNotFound/RecipesNotFound";
 
-import "./Recipes.css";
+import "./css/RecipesLight.css";
+import "./css/RecipesDark.css";
 
 const appId = "b0a6bde2";
 const appKey = "0c6ae1f5e2cfcf08b3445468e5be3fae";
@@ -162,11 +163,8 @@ export default function Recipes() {
                     key={index}
                     title={data.recipe.label}
                     imgUrl={data.recipe.images.REGULAR.url}
-                    time={data.recipe.totalTime}
-                    servings={data.recipe.yield}
                     calories={caloriesPerServing}
                     protein={proteinPerServing}
-                    carbs={carbsPerServing}
                     url={data.recipe.url}
                     ingredients={data.recipe.ingredients.length}
                     idLink={data._links.self.href}
