@@ -2,9 +2,17 @@
   color: white;
 }
 
+.ingredients-section-darkMode .css-1o50uvc-control {
+  background-color: rgb(35, 32, 182);
+}
+
+.ingredients-section-darkMode .css-1u97g65-control {
+  background-color: rgb(35, 32, 182);
+}
+
 .ingredients-section-darkMode .css-1jqq78o-placeholder,
 .css-tj5bde-Svg {
-  color: white;
+  color: rgb(245, 241, 241);
 }
 
 .ingredients-section-darkMode .css-lspg7t-control {
