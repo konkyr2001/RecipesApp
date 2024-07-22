@@ -62,7 +62,7 @@ export default function Favorites() {
         whileHover={{ scale: 1.2 }}
         whileInView={{ scale: 1 }}
       >
-        <i className="fa-solid fa-heart text-[25px] text-red-500 z-10 relative"></i>
+        <i className="fa-solid fa-heart text-[22px] md:text-[25px] text-red-500 z-10 relative"></i>
         {favorites.length > -1 && (
           <p className="absolute top-3 left-3 z-20 rounded-[50%] bg-slate-300 w-5 h-5 text-center p-0 m-0 flex items-center justify-center">
             {favorites.length}
@@ -76,7 +76,7 @@ export default function Favorites() {
           closed: { scale: 0, opacity: 0 },
         }}
         animate={showFavorites ? "open" : "closed"}
-        className="favorites-container absolute bg-slate-100 rounded-[20px] min-w-[200px] w-auto max-w-[400px] mt-10 z-20 px-1 -right-20  max-h-[470px]"
+        className="favorites-container absolute bg-slate-100 rounded-[20px] min-w-[200px] w-auto max-w-[310px] md:max-w-[400px] mt-8 z-20 px-1 -right-20  max-h-[470px]"
         ref={modalRef}
       >
         <div className="triangle bg-transparent border-b-slate-100 absolute right-[78px] -top-8 border-[17px] after:border-none"></div>
@@ -85,16 +85,16 @@ export default function Favorites() {
             No favourite recipes found yet
           </p>
         ) : (
-          <ul className="favorites-box px-2 w-full flex flex-col mb-1 overflow-y-auto max-h-[470px]">
+          <ul className="favorites-box px-2 w-full flex flex-col mb-1 overflow-x-hidden overflow-y-auto max-h-[470px] text-sm md:text-base">
             {favorites.map((favorite, index) => (
               <li
                 key={index}
-                className="min-w-[350px] w-auto flex items-center space-x-2 my-2"
+                className="min-w-[280px] md:min-w-[350px] w-auto flex items-center space-x-2 my-2"
               >
                 <a
                   href={favorite.url}
                   target="_blank"
-                  className="min-w-[100px] h-[100px] rounded-md overflow-hidden hover:opacity-95 duration-300 ease-in-out cursor-pointer"
+                  className="min-w-[50px] md:min-w-[100px] h-[50px] md:h-[100px] rounded-md overflow-hidden hover:opacity-95 duration-300 ease-in-out cursor-pointer"
                 >
                   <img
                     alt="Recipe image"
@@ -112,7 +112,7 @@ export default function Favorites() {
                           className="fa-solid fa-fire-flame-simple text-red-400 m-0"
                           title="Calories per 100gr"
                         >
-                          <span className="ml-1">{favorite.calories}</span>
+                          <span className="ml-[2px] md:ml-1">{favorite.calories}</span>
                         </i>
                       </p>
                     </li>
@@ -123,7 +123,7 @@ export default function Favorites() {
                           title="Protein per 100gr"
                           style={{ color: favorite.proteinColor }}
                         >
-                          <span className="ml-1">{favorite.protein}</span>
+                          <span className="ml-[1px] md:ml-1">{favorite.protein}</span>
                         </i>
                       </p>
                     </li>
@@ -137,7 +137,7 @@ export default function Favorites() {
                           width={25}
                         />
                         <i className="fa-solid text-gray-400">
-                          <span className="ml-1">{favorite.ingredients}</span>
+                          <span className="ml-[0px] md:ml-1">{favorite.ingredients}</span>
                         </i>
                       </p>
                     </li>
@@ -149,7 +149,7 @@ export default function Favorites() {
                         whileTap={{ scale: 0.8 }}
                         title="Remove from favorite list"
                       >
-                        <i className="fa-solid fa-heart text-red-500 float-right text-[22px]"></i>
+                        <i className="fa-solid fa-heart text-red-500 float-right text-xl md:text-[22px]"></i>
                       </motion.button>
                     </li>
                   </ul>

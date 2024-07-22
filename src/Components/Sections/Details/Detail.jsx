@@ -1,45 +1,21 @@
-import { motion, animate } from "framer-motion";
-import { useEffect, useRef } from "react";
-
-export default function Detail({ image, title, description, from, to }) {
-  const pRef = useRef();
-
-  useEffect(() => {
-    if (to) {
-      const pText = pRef.current;
-      const caloriesValueControl = animate(from, to, {
-        duration: 3,
-        delay: 0.5,
-        ease: "easeOut",
-        onUpdate(value) {
-          pText.textContent = Math.round(value);
-        },
-      });
-
-      return () => {
-        caloriesValueControl.stop();
-      };
-    }
-  }, [from, to]);
+export default function Detail({ image, title, description }) {
 
   return (
-    <div className="details rounded-xl font-Montserrat flex flex-col justify-center items-center h-full pt-[35px]">
+    <div className="details rounded-xl font-Montserrat flex flex-col  items-center h-full pt-[40px] pb-[10px] xl:pt-[40px] xl:justify-center">
       <div className="w-full flex justify-center items-center h-1/3">
         <img
-          width="110"
-          className="p-1 cursor-default rounded-[50%] bg-slate-300 outline-[5px] outline-slate-100 outline cursorPointer"
+          className="p-1 cursor-default rounded-[50%] bg-slate-300 outline-[5px] outline-slate-100 outline cursorPointer w-[90px] xl:w-[110px]"
           src={image}
           alt="img"
         />
       </div>
 
-      <div className="text-center text-2xl h-1/3 flex justify-center items-center">
+      <div className="text-center text-xl flex justify-center items-center mt-[36px] mb-[25px] xl:text-2xl xl:h-1/3">
         <h3 className=" text-slate-100 drop-shadow-2xl">{title}</h3>
       </div>
 
-      <div className="text-xl h-1/3 text-slate-100 px-10 text-center">
+      <div className="text-base text-slate-100 px-2 text-center xl:text-lg xl:1/3 xl:px-10">
         <p>{description}</p>
-        {to && <motion.p className="text-xl" ref={pRef}></motion.p>}
       </div>
     </div>
   );

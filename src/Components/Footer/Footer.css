@@ -26,28 +26,28 @@
   background-color: #0962e8;
 }
 .waves #wave1 {
-  z-index: 1000;
+  z-index: 19;
   opacity: 1;
   bottom: 0;
   animation: animateWaves 4s linear infinite;
 }
 
 .waves #wave2 {
-  z-index: 999;
+  z-index: 10;
   opacity: 0.5;
   bottom: 10px;
   animation: animate 4s linear infinite !important;
 }
 
 .waves #wave3 {
-  z-index: 1000;
+  z-index: 19;
   opacity: 0.2;
   bottom: 15px;
   animation: animateWaves 3s linear infinite;
 }
 
 .waves #wave4 {
-  z-index: 999;
+  z-index: 10;
   opacity: 0.7;
   bottom: 20px;
   animation: animate 3s linear infinite;

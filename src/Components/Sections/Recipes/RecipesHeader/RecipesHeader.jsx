@@ -1,6 +1,6 @@
-import SortingMenu from "./SortingMenu/SortingMenu";
+import SortingMenu from "../SortingMenu/SortingMenu";
 import RefreshRecipes from "./RefreshRecipes";
-import InformationButton from "../../InformationButton/InformationButton";
+import InformationButton from "../../../InformationButton/InformationButton";
 
 export default function RecipesHeader({
   handleRefresh,
@@ -11,7 +11,7 @@ export default function RecipesHeader({
   return (
     <div {...props}>
       <InformationButton
-        extraClass="mr-10 bottom-[2.5px]"
+        extraClass="mr-10 bottom-[1px] " /* 2xl:bottom-[2.5px] */
         text="According to your filters you will get up to 20 random recipes that"
       />
       <RefreshRecipes handleRefresh={handleRefresh} />

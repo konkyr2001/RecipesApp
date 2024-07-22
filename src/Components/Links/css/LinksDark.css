@@ -1,0 +1,14 @@
+.links-darkMode li > button {
+  background-color: rgb(231, 220, 220);
+  border: 2px solid rgb(199, 177, 177);
+  transition: ease-in-out 200ms all;
+}
+
+.links-darkMode li > button:hover {
+  background-color: rgb(231, 220, 220);
+  border: 2px solid rgb(199, 177, 177);
+}
+
+.links-darkMode li > button > div {
+  background-color: rgb(78, 95, 248);
+}

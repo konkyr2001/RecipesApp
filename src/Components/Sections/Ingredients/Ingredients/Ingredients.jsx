@@ -118,32 +118,32 @@ export default function SearchIngredients() {
 
   return (
     <div
-      className="ingredients-section-lightMode font-Montserrat section w-full h-[100vh] flex justify-center items-center relative text-white"
+      className="ingredients-section-lightMode font-Montserrat section w-full min-h-[800px] flex justify-center items-center relative text-white xl:min-h-[1200px] p-4"
       id="ingredients-section"
     >
       <div
-        className="ingredients-img absolute w-full h-[100vh] bg-cover bg-bottom top-0 left-0 block"
+        className="ingredients-img absolute w-full h-full bg-cover bg-left md:bg-bottom xl:bg-center top-0 left-0 block"
         style={{
           backgroundImage: `url(${backgroundImg})`,
         }}
       ></div>
-      <div className="ingredients-filter-container w-[800px] h-1/2 relative">
-        <div className="calories-container absolute w-full h-1/4 flex justify-center items-center gap-10">
-          <label htmlFor="slider">
+      <div className="ingredients-filter-container w-[800px] min-h-[600px] relative text-sm lg:text-base">
+        <div className="calories-container absolute w-full h-1/4 flex justify-between sm:justify-center items-center sm:gap-10">
+          <label htmlFor="slider" className="pl-2 min-w-fit">
             Set Calories
             <i
-              className="fa-solid fa-fire-flame-simple text-red-500 inline-block ml-3"
+              className="fa-solid fa-fire-flame-simple text-red-500 inline-block ml-1 sm:ml-3"
               title="Calories per 100gr"
             ></i>
           </label>
           <div
             id="slider"
-            className="inline-block w-[400px] m-0"
+            className="inline-block text-sm w-[180px] sm:w-[300px] lg:w-[400px]"
             ref={sliderRef}
           ></div>
           <InformationButton
             text="Adjust the calories per serving of your recipes to be around the calories you will give as min and max value."
-            extraClass="right-5"
+            extraClass="right-3 sm:right-5"
           />
         </div>
         <div className="protein-container absolute top-1/4  w-full h-1/4 flex justify-center items-center">
@@ -165,19 +165,19 @@ export default function SearchIngredients() {
             max="100"
           />
           <InformationButton
-            extraClass="ml-5"
+            extraClass="ml-3 sm:ml-5"
             text="Adjust the minimum amount of protein per serving that your recipes will contain."
           />
         </div>
         <div className="ingredients-container absolute top-2/4  w-full h-1/4 flex justify-center items-center flex-col gap-5">
-          <span className="flex justify-center items-center">
+          <span className="flex justify-center items-center p-2">
             <SelectIngredients
               selectedIngredients={ingredients}
               setSelectedIngredients={setIngredients}
             />
             <InformationButton
               text="Add the ingredients that your recipes will include"
-              extraClass="ml-5"
+              extraClass="ml-2 sm:ml-5"
             />
           </span>
           <span className="flex h-[50px]">
@@ -192,7 +192,7 @@ export default function SearchIngredients() {
             </label>
             <InformationButton
               text="Check the checkbox if you only want recipes with the ingredients you just added."
-              extraClass="ml-5 mt-[3px]"
+              extraClass="ml-2 mt-[2px] xl:mt-[3px] sm:ml-5"
             />
           </span>
         </div>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 import Link from "./Link";
+import "./css/LinksDark.css";
 
 export default function Links() {
   const [visibleButton, setVisibleButton] = useState("0");
@@ -41,9 +42,12 @@ export default function Links() {
   }, []);
 
   return (
-    <span className="fixed right-2 top-1/2 translate-y-[-1/2] z-20 mr-3">
+    <span
+      className="fixed right-2 top-1/2 translate-y-[-1/2] z-20 mr-0 lg:mr-3"
+      id="links"
+    >
       <ul className="flex justify-center items-center flex-col">
-        <li className="mb-1">
+        <li>
           <Link
             section="welcome-section"
             visibleButton={visibleButton}

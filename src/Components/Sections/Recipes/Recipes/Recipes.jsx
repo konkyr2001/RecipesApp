@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 
 import Recipe from "../Recipe/Recipe";
-import RecipesHeader from "../RecipesHeader";
+import RecipesHeader from "../RecipesHeader/RecipesHeader";
 import Loading from "../Loading";
 import RecipesNotFound from "../RecipesNotFound/RecipesNotFound";
 
@@ -136,13 +136,13 @@ export default function Recipes() {
       {data.hits.length > 0 && (
         <>
           <RecipesHeader
-            className="recipes-header mt-7 mb-0 mr-12 float-right"
+            className="recipes-header mt-10 mb-0 mr-5 float-right md:mt-7 md:mr-12"
             handleRefresh={handleRefresh}
             setSortValue={setSortValue}
             setSortBy={setSortBy}
           />
           <ul
-            className="w-full px-12 py-5 flex flex-wrap items-start gap-x-11 justify-center font-Recursive"
+            className="w-full px-4 py-5 flex flex-wrap items-start gap-x-11 gap-y-5 justify-center font-Recursive md:gap-y-0 md:px-12 xl:gap-x-20"
             id="recipes-list"
           >
             {data.hits

@@ -5,8 +5,6 @@ export default function DetailsContainer({
   image,
   title,
   description,
-  from,
-  to,
   delay,
 }) {
   return (
@@ -26,8 +24,6 @@ export default function DetailsContainer({
           image={image}
           title={title}
           description={description}
-          from={from}
-          to={to}
         />
       </div>
     </motion.div>

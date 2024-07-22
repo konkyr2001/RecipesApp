@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap");
+
+.randomFood-container {
+  font-family: "Source Code Pro", monospace;
+}
+
+.box {
+  line-height: 1.5;
+  margin: 1.5rem -12px;
+  min-width: 250px;
+  background-color: #165d8b;
+  border-radius: 20px;
+  border: 8px solid #0038ff;
+  color: #fff;
+  padding: 1ch;
+  transition: 0.5s ease;
+  border-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 0H8v4H4v4H0v8h4v4h4v4h8v-4h4v-4h4V8h-4V4h-4V0zm0 4v4h4v8h-4v4H8v-4H4V8h4V4h8z' fill='%230038FF'/%3E%3C/svg%3E")
+    8 stretch;
+}
+
+.box:before {
+  content: "";
+  position: absolute;
+  top: -29px;
+  right: 19px;
+  rotate: -90deg;
+  width: 23px;
+  height: 27.8px;
+  z-index: 1;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 23 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 0H0v8h12v4h4v4h-4v4H0v8h4v-4h8v-4h4v-4h8v-4h-8V8h-4V4H4V0z' fill='%230038FF'/%3E%3Cpath fill='%23161616' d='M0 8h4v12H0z'/%3E%3C/svg%3E");
+}
+
+.box:after {
+  content: "";
+  position: absolute;
+  top: -26px;
+  right: 18px;
+  z-index: 0;
+
+  /* traingle for background color */
+  border-left: 13px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 22px solid #165d8b;
+}
+
+.box > p {
+  text-align: center;
+  margin-bottom: 10px;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.box > h5 {
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.visibleFood {
+  color: #165d8b;
+  opacity: 1;
+  transition: 200ms ease color;
+}
+
+.hiddenFood {
+  opacity: 1;
+  color: #a2d2ff;
+  transition: 200ms ease color;
+}
+
+.hideBox {
+  opacity: 0;
+}
+
+.showBox {
+  opacity: 1;
+}

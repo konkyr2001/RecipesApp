@@ -29,7 +29,7 @@ export default function Footer() {
               hidden: { opacity: 0, x: -100, filter: "blur(5px)" },
             }}
           >
-            <i className="fa-brands fa-linkedin text-4xl hover:-translate-y-2 duration-300 ease-in-out"></i>
+            <i className="fa-brands fa-linkedin text-3xl hover:-translate-y-2 duration-300 ease-in-out md:text-4xl"></i>
           </motion.a>
           <motion.a
             href="https://github.com/konkyr2001"
@@ -44,7 +44,7 @@ export default function Footer() {
               hidden: { opacity: 0, x: -100, filter: "blur(5px)" },
             }}
           >
-            <i className="fa-brands fa-github text-4xl hover:-translate-y-2 duration-300 ease-in-out"></i>
+            <i className="fa-brands fa-github text-3xl hover:-translate-y-2 duration-300 ease-in-out md:text-4xl"></i>
           </motion.a>
           <motion.a
             href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwQMFzfGwrQbMnttmsTQvqnlsJRKmNMHbNHHLvGSSpFGxqBsskplGFzKBMqBVJXkDgfSFMP"
@@ -59,7 +59,7 @@ export default function Footer() {
               hidden: { opacity: 0, x: -100, filter: "blur(5px)" },
             }}
           >
-            <i className="fa-brands fa-google-plus text-4xl hover:-translate-y-2 duration-300 ease-in-out"></i>
+            <i className="fa-brands fa-google-plus text-3xl hover:-translate-y-2 duration-300 ease-in-out md:text-4xl"></i>
           </motion.a>
         </li>
         <motion.li
@@ -74,31 +74,31 @@ export default function Footer() {
         >
           <a
             href="#welcome-section"
-            className="m-5 text-[18px] opacity-75 hover:opacity-100 hover:text-[22px] duration-200 ease-in-out"
+            className="m-5 text-base opacity-75 hover:opacity-100 hover:text-[22px] duration-200 ease-in-out md:text-lg"
           >
             Home
           </a>
           <a
             href="#website-details-section"
-            className="m-5 text-[18px] opacity-75 hover:opacity-100 hover:text-[22px] duration-200 ease-in-out"
+            className="m-5 text-base opacity-75 hover:opacity-100 hover:text-[22px] duration-200 ease-in-out md:text-lg"
           >
             About
           </a>
           <a
             href="#ingredients-section"
-            className="m-5 text-[18px] opacity-75 hover:opacity-100 hover:text-[22px] duration-200 ease-in-out"
+            className="m-5 text-base opacity-75 hover:opacity-100 hover:text-[22px] duration-200 ease-in-out md:text-lg"
           >
             Filter
           </a>
           <a
             href="#recipes-section"
-            className="m-5 text-[18px] opacity-75 hover:opacity-100 hover:text-[22px] duration-200 ease-in-out"
+            className="m-5 text-base opacity-75 hover:opacity-100 hover:text-[22px] duration-200 ease-in-out md:text-lg"
           >
             Recipes
           </a>
         </motion.li>
         <motion.li
-          className="absolute bottom-1 font-extralight"
+          className="absolute bottom-1 font-extralight text-sm tracking-tight md:text-base"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}

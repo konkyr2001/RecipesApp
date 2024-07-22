@@ -23,6 +23,7 @@ export default function LightDarkMode() {
     const recipeSection = document.getElementById("recipes-section");
     const footer = document.getElementById("footer");
     const favorites = document.getElementById("favorites");
+    const links = document.getElementById("links")
 
     if (isOn) {
       localStorage.setItem("darkMode", true);
@@ -46,6 +47,9 @@ export default function LightDarkMode() {
 
       favorites.classList.remove("favorites-lightMode");
       favorites.classList.add("favorites-darkMode");
+
+      links.classList.remove("links-lightMode");
+      links.classList.add("links-darkMode");
     } else {
       localStorage.setItem("darkMode", false);
       document.body.classList.remove("dark-mode");
@@ -68,6 +72,9 @@ export default function LightDarkMode() {
 
       favorites.classList.add("favorites-lightMode");
       favorites.classList.remove("favorites-darkMode");
+
+      links.classList.add("links-lightMode");
+      links.classList.remove("links-darkMode");
     }
   }, [isOn]);
 

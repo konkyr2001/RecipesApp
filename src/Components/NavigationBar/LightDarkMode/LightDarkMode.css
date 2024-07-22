@@ -58,26 +58,20 @@
   opacity: 0;
 }
 
-/*
+@media only screen and (max-width: 640px) {
+  .switch {
+    height: 28px;
+  }
 
-  WELCOME SECTION DARK MODE
+  .handle {
+    width: 22px;
+    height: 22px;
+    top: 3px;
+    left: 4px;
+  }
 
-*/
-
-/*
-
-  DETAILS SECTION DARK MODE
-
-*/
-
-/*
-
-  DETAILS SECTION DARK MODE
-
-*/
-
-/*
-
-  RECIPES SECTION DARK MODE
-
-*/
+  .switch[data-ison="true"] .handle {
+    left: 35px;
+  }
+  
+}

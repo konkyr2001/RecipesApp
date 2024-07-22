@@ -11,10 +11,10 @@ export default function WebsiteDetails() {
   return (
     <div
       id="website-details-section"
-      className="website-details-section-lightMode relative w-[full] h-[100vh] flex justify-center items-center"
+      className="website-details-section-lightMode relative w-full h-fit flex justify-center items-center"
     >
-      <ul className="w-full flex justify-center items-center gap-5">
-        <li className="w-1/5 h-[400px]">
+      <ul className="w-full flex justify-center items-center gap-28 flex-col flex-wrap min-h-[800px] pb-20 pt-16 px-4 md:flex-row md:gap-25 xl:w-[90%] 2xl:gap-10 xl:px-0 xl:min-h-[1000px]">
+        <li className="h-fit w-[300px] sm:w-[370px] xl:w-[400px] xl:h-[350px]">
           <DetailsContainer
             image={nutritionImg}
             title={"Macros"}
@@ -24,7 +24,7 @@ export default function WebsiteDetails() {
             delay="0"
           />
         </li>
-        <li className="w-1/5 h-[400px]">
+        <li className="h-fit w-[300px] sm:w-[370px] xl:w-[400px] xl:h-[350px]">
           <DetailsContainer
             image={foodImg}
             title={"Ingredients"}
@@ -34,7 +34,7 @@ export default function WebsiteDetails() {
             delay="0.4"
           />
         </li>
-        <li className="w-1/5 h-[400px]">
+        <li className="h-fit w-[300px] sm:w-[370px] xl:w-[400px] xl:h-[350px]">
           <DetailsContainer
             image={recipesImg}
             title={"Recipes"}
@@ -44,7 +44,7 @@ export default function WebsiteDetails() {
             delay="0.8"
           />
         </li>
-        <li className="w-1/5 h-[400px]">
+        <li className="h-fit w-[300px] sm:w-[370px] xl:w-[400px] xl:h-[350px]">
           <DetailsContainer
             image={likeImg}
             title={"Save"}

@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
-import QuestionModal from "./InformationModal/InformationModal";
+import InformationButton from "./InformationModal/InformationModal";
 
 export default function QuestionButton({ text, extraClass }) {
   const [modalVisibility, setModalVisibility] = useState(false);
@@ -40,7 +40,7 @@ export default function QuestionButton({ text, extraClass }) {
           ref={iRef}
         ></i>
       </motion.button>
-      <QuestionModal visibility={modalVisibility} message={text} />
+      <InformationButton visibility={modalVisibility} message={text} buttonRef={buttonRef} />
     </div>
   );
 }

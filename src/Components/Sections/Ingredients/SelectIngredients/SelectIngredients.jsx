@@ -11,7 +11,7 @@ const customStyles = {
     padding: 0,
     margin: 0,
     borderRadius: 10,
-    width: 400,
+    // width: 400,
   }),
   menu: (base) => ({
     ...base,
@@ -118,7 +118,7 @@ export default function SelectIngredients({
       noOptionsMessage={({ inputValue }) =>
         inputValue ? "Press enter to add this ingredient" : "No options"
       }
-      className="select-ingredients font-Quicksand transition-all"
+      className="select-ingredients font-Quicksand transition-all min-w-[250px] max-w-[480px] md:min-w-[400px] md:max-w-[500px] text-sm xl:text-base"
       styles={customStyles}
       closeMenuOnSelect={false}
       inputValue={selectCurrentInput}
